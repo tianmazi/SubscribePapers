@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '0 0 * * *' # 每天 UTC 时间 00:00 触发, 即上海时间8点
 
+secrets:
+  SERVERCHAN_API_KEY: "SCT212033TewzBK5wNnYYPB4KPN1UDRvoD"
+  CAIYUN_TOKEN: "mny2p354h7pzklzvdz6w"
+  GITHUB_TOKEN: "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"
+
 jobs:
   daily-push:
     runs-on: ubuntu-latest
