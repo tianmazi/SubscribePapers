@@ -2091,5 +2091,40 @@
         "pub_date": "2023-07-19",
         "summary": "In an era where visual content generation is increasingly driven by machine\nlearning, the integration of human feedback into generative models presents\nsignificant opportunities for enhancing user experience and output quality.\nThis study explores strategies for incorporating iterative human feedback into\nthe generative process of diffusion-based text-to-image models. We propose\nFABRIC, a training-free approach applicable to a wide range of popular\ndiffusion models, which exploits the self-attention layer present in the most\nwidely used architectures to condition the diffusion process on a set of\nfeedback images. To ensure a rigorous assessment of our approach, we introduce\na comprehensive evaluation methodology, offering a robust mechanism to quantify\nthe performance of generative visual models that integrate human feedback. We\nshow that generation results improve over multiple rounds of iterative feedback\nthrough exhaustive analysis, implicitly optimizing arbitrary user preferences.\nThe potential applications of these findings extend to fields such as\npersonalized content creation and customization.",
         "translated": ""
+    },
+    {
+        "title": "PAPR: Proximity Attention Point Rendering",
+        "url": "http://arxiv.org/abs/2307.11086v1",
+        "pub_date": "2023-07-20",
+        "summary": "Learning accurate and parsimonious point cloud representations of scene\nsurfaces from scratch remains a challenge in 3D representation learning.\nExisting point-based methods often suffer from the vanishing gradient problem\nor require a large number of points to accurately model scene geometry and\ntexture. To address these limitations, we propose Proximity Attention Point\nRendering (PAPR), a novel method that consists of a point-based scene\nrepresentation and a differentiable renderer. Our scene representation uses a\npoint cloud where each point is characterized by its spatial position,\nforeground score, and view-independent feature vector. The renderer selects the\nrelevant points for each ray and produces accurate colours using their\nassociated features. PAPR effectively learns point cloud positions to represent\nthe correct scene geometry, even when the initialization drastically differs\nfrom the target geometry. Notably, our method captures fine texture details\nwhile using only a parsimonious set of points. We also demonstrate four\npractical applications of our method: geometry editing, object manipulation,\ntexture transfer, and exposure control. More results and code are available on\nour project website at https://zvict.github.io/papr/.",
+        "translated": ""
+    },
+    {
+        "title": "Representation Learning in Anomaly Detection: Successes, Limits and a\n  Grand Challenge",
+        "url": "http://arxiv.org/abs/2307.11085v1",
+        "pub_date": "2023-07-20",
+        "summary": "In this perspective paper, we argue that the dominant paradigm in anomaly\ndetection cannot scale indefinitely and will eventually hit fundamental limits.\nThis is due to the a no free lunch principle for anomaly detection. These\nlimitations can be overcome when there are strong tasks priors, as is the case\nfor many industrial tasks. When such priors do not exists, the task is much\nharder for anomaly detection. We pose two such tasks as grand challenges for\nanomaly detection: i) scientific discovery by anomaly detection ii) a\n\"mini-grand\" challenge of detecting the most anomalous image in the ImageNet\ndataset. We believe new anomaly detection tools and ideas would need to be\ndeveloped to overcome these challenges.",
+        "translated": ""
+    },
+    {
+        "title": "GLSFormer : Gated - Long, Short Sequence Transformer for Step\n  Recognition in Surgical Videos",
+        "url": "http://arxiv.org/abs/2307.11081v1",
+        "pub_date": "2023-07-20",
+        "summary": "Automated surgical step recognition is an important task that can\nsignificantly improve patient safety and decision-making during surgeries.\nExisting state-of-the-art methods for surgical step recognition either rely on\nseparate, multi-stage modeling of spatial and temporal information or operate\non short-range temporal resolution when learned jointly. However, the benefits\nof joint modeling of spatio-temporal features and long-range information are\nnot taken in account. In this paper, we propose a vision transformer-based\napproach to jointly learn spatio-temporal features directly from sequence of\nframe-level patches. Our method incorporates a gated-temporal attention\nmechanism that intelligently combines short-term and long-term spatio-temporal\nfeature representations. We extensively evaluate our approach on two cataract\nsurgery video datasets, namely Cataract-101 and D99, and demonstrate superior\nperformance compared to various state-of-the-art methods. These results\nvalidate the suitability of our proposed approach for automated surgical step\nrecognition. Our code is released at:\nhttps://github.com/nisargshah1999/GLSFormer",
+        "translated": ""
+    },
+    {
+        "title": "AlignDet: Aligning Pre-training and Fine-tuning in Object Detection",
+        "url": "http://arxiv.org/abs/2307.11077v1",
+        "pub_date": "2023-07-20",
+        "summary": "The paradigm of large-scale pre-training followed by downstream fine-tuning\nhas been widely employed in various object detection algorithms. In this paper,\nwe reveal discrepancies in data, model, and task between the pre-training and\nfine-tuning procedure in existing practices, which implicitly limit the\ndetector's performance, generalization ability, and convergence speed. To this\nend, we propose AlignDet, a unified pre-training framework that can be adapted\nto various existing detectors to alleviate the discrepancies. AlignDet\ndecouples the pre-training process into two stages, i.e., image-domain and\nbox-domain pre-training. The image-domain pre-training optimizes the detection\nbackbone to capture holistic visual abstraction, and box-domain pre-training\nlearns instance-level semantics and task-aware concepts to initialize the parts\nout of the backbone. By incorporating the self-supervised pre-trained\nbackbones, we can pre-train all modules for various detectors in an\nunsupervised paradigm. As depicted in Figure 1, extensive experiments\ndemonstrate that AlignDet can achieve significant improvements across diverse\nprotocols, such as detection algorithm, model backbone, data setting, and\ntraining schedule. For example, AlignDet improves FCOS by 5.3 mAP, RetinaNet by\n2.1 mAP, Faster R-CNN by 3.3 mAP, and DETR by 2.3 mAP under fewer epochs.",
+        "translated": ""
+    },
+    {
+        "title": "Learning Dense UV Completion for Human Mesh Recovery",
+        "url": "http://arxiv.org/abs/2307.11074v1",
+        "pub_date": "2023-07-20",
+        "summary": "Human mesh reconstruction from a single image is challenging in the presence\nof occlusion, which can be caused by self, objects, or other humans. Existing\nmethods either fail to separate human features accurately or lack proper\nsupervision for feature completion. In this paper, we propose Dense Inpainting\nHuman Mesh Recovery (DIMR), a two-stage method that leverages dense\ncorrespondence maps to handle occlusion. Our method utilizes a dense\ncorrespondence map to separate visible human features and completes human\nfeatures on a structured UV map dense human with an attention-based feature\ncompletion module. We also design a feature inpainting training procedure that\nguides the network to learn from unoccluded features. We evaluate our method on\nseveral datasets and demonstrate its superior performance under heavily\noccluded scenarios compared to other methods. Extensive experiments show that\nour method obviously outperforms prior SOTA methods on heavily occluded images\nand achieves comparable results on the standard benchmarks (3DPW).",
+        "translated": ""
     }
 ]
