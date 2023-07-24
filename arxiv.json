@@ -2133,5 +2133,40 @@
         "pub_date": "2023-07-20",
         "summary": "Automated surgical step recognition is an important task that can\nsignificantly improve patient safety and decision-making during surgeries.\nExisting state-of-the-art methods for surgical step recognition either rely on\nseparate, multi-stage modeling of spatial and temporal information or operate\non short-range temporal resolution when learned jointly. However, the benefits\nof joint modeling of spatio-temporal features and long-range information are\nnot taken in account. In this paper, we propose a vision transformer-based\napproach to jointly learn spatio-temporal features directly from sequence of\nframe-level patches. Our method incorporates a gated-temporal attention\nmechanism that intelligently combines short-term and long-term spatio-temporal\nfeature representations. We extensively evaluate our approach on two cataract\nsurgery video datasets, namely Cataract-101 and D99, and demonstrate superior\nperformance compared to various state-of-the-art methods. These results\nvalidate the suitability of our proposed approach for automated surgical step\nrecognition. Our code is released at:\nhttps://github.com/nisargshah1999/GLSFormer",
         "translated": ""
+    },
+    {
+        "title": "BandRe: Rethinking Band-Pass Filters for Scale-Wise Object Detection\n  Evaluation",
+        "url": "http://arxiv.org/abs/2307.11748v1",
+        "pub_date": "2023-07-21",
+        "summary": "Scale-wise evaluation of object detectors is important for real-world\napplications. However, existing metrics are either coarse or not sufficiently\nreliable. In this paper, we propose novel scale-wise metrics that strike a\nbalance between fineness and reliability, using a filter bank consisting of\ntriangular and trapezoidal band-pass filters. We conduct experiments with two\nmethods on two datasets and show that the proposed metrics can highlight the\ndifferences between the methods and between the datasets. Code is available at\nhttps://github.com/shinya7y/UniverseNet .",
+        "translated": ""
+    },
+    {
+        "title": "3D Skeletonization of Complex Grapevines for Robotic Pruning",
+        "url": "http://arxiv.org/abs/2307.11706v1",
+        "pub_date": "2023-07-21",
+        "summary": "Robotic pruning of dormant grapevines is an area of active research in order\nto promote vine balance and grape quality, but so far robotic efforts have\nlargely focused on planar, simplified vines not representative of commercial\nvineyards. This paper aims to advance the robotic perception capabilities\nnecessary for pruning in denser and more complex vine structures by extending\nplant skeletonization techniques. The proposed pipeline generates skeletal\ngrapevine models that have lower reprojection error and higher connectivity\nthan baseline algorithms. We also show how 3D and skeletal information enables\nprediction accuracy of pruning weight for dense vines surpassing prior work,\nwhere pruning weight is an important vine metric influencing pruning site\nselection.",
+        "translated": ""
+    },
+    {
+        "title": "SACReg: Scene-Agnostic Coordinate Regression for Visual Localization",
+        "url": "http://arxiv.org/abs/2307.11702v1",
+        "pub_date": "2023-07-21",
+        "summary": "Scene coordinates regression (SCR), i.e., predicting 3D coordinates for every\npixel of a given image, has recently shown promising potential. However,\nexisting methods remain mostly scene-specific or limited to small scenes and\nthus hardly scale to realistic datasets. In this paper, we propose a new\nparadigm where a single generic SCR model is trained once to be then deployed\nto new test scenes, regardless of their scale and without further finetuning.\nFor a given query image, it collects inputs from off-the-shelf image retrieval\ntechniques and Structure-from-Motion databases: a list of relevant database\nimages with sparse pointwise 2D-3D annotations. The model is based on the\ntransformer architecture and can take a variable number of images and sparse\n2D-3D annotations as input. It is trained on a few diverse datasets and\nsignificantly outperforms other scene regression approaches on several\nbenchmarks, including scene-specific models, for visual localization. In\nparticular, we set a new state of the art on the Cambridge localization\nbenchmark, even outperforming feature-matching-based approaches.",
+        "translated": ""
+    },
+    {
+        "title": "Enhancing CLIP with GPT-4: Harnessing Visual Descriptions as Prompts",
+        "url": "http://arxiv.org/abs/2307.11661v1",
+        "pub_date": "2023-07-21",
+        "summary": "Contrastive pretrained large Vision-Language Models (VLMs) like CLIP have\nrevolutionized visual representation learning by providing good performance on\ndownstream datasets. VLMs are 0-shot adapted to a downstream dataset by\ndesigning prompts that are relevant to the dataset. Such prompt engineering\nmakes use of domain expertise and a validation dataset. Meanwhile, recent\ndevelopments in generative pretrained models like GPT-4 mean they can be used\nas advanced internet search tools. They can also be manipulated to provide\nvisual information in any structure. In this work, we show that GPT-4 can be\nused to generate text that is visually descriptive and how this can be used to\nadapt CLIP to downstream tasks. We show considerable improvements in 0-shot\ntransfer accuracy on specialized fine-grained datasets like EuroSAT (~7%), DTD\n(~7%), SUN397 (~4.6%), and CUB (~3.3%) when compared to CLIP's default prompt.\nWe also design a simple few-shot adapter that learns to choose the best\npossible sentences to construct generalizable classifiers that outperform the\nrecently proposed CoCoOP by ~2% on average and by over 4% on 4 specialized\nfine-grained datasets. We will release the code, prompts, and auxiliary text\ndataset upon acceptance.",
+        "translated": ""
+    },
+    {
+        "title": "FEDD -- Fair, Efficient, and Diverse Diffusion-based Lesion Segmentation\n  and Malignancy Classification",
+        "url": "http://arxiv.org/abs/2307.11654v1",
+        "pub_date": "2023-07-21",
+        "summary": "Skin diseases affect millions of people worldwide, across all ethnicities.\nIncreasing diagnosis accessibility requires fair and accurate segmentation and\nclassification of dermatology images. However, the scarcity of annotated\nmedical images, especially for rare diseases and underrepresented skin tones,\nposes a challenge to the development of fair and accurate models. In this\nstudy, we introduce a Fair, Efficient, and Diverse Diffusion-based framework\nfor skin lesion segmentation and malignancy classification. FEDD leverages\nsemantically meaningful feature embeddings learned through a denoising\ndiffusion probabilistic backbone and processes them via linear probes to\nachieve state-of-the-art performance on Diverse Dermatology Images (DDI). We\nachieve an improvement in intersection over union of 0.18, 0.13, 0.06, and 0.07\nwhile using only 5%, 10%, 15%, and 20% labeled samples, respectively.\nAdditionally, FEDD trained on 10% of DDI demonstrates malignancy classification\naccuracy of 81%, 14% higher compared to the state-of-the-art. We showcase high\nefficiency in data-constrained scenarios while providing fair performance for\ndiverse skin tones and rare malignancy conditions. Our newly annotated DDI\nsegmentation masks and training code can be found on\nhttps://github.com/hectorcarrion/fedd.",
+        "translated": ""
     }
 ]
