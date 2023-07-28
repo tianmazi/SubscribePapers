@@ -2273,5 +2273,40 @@
         "pub_date": "2023-07-26",
         "summary": "Text-conditioned image editing has emerged as a powerful tool for editing\nimages. However, in many situations, language can be ambiguous and ineffective\nin describing specific image edits. When faced with such challenges, visual\nprompts can be a more informative and intuitive way to convey ideas. We present\na method for image editing via visual prompting. Given pairs of example that\nrepresent the \"before\" and \"after\" images of an edit, our goal is to learn a\ntext-based editing direction that can be used to perform the same edit on new\nimages. We leverage the rich, pretrained editing capabilities of text-to-image\ndiffusion models by inverting visual prompts into editing instructions. Our\nresults show that with just one example pair, we can achieve competitive\nresults compared to state-of-the-art text-conditioned image editing frameworks.",
         "translated": ""
+    },
+    {
+        "title": "To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation",
+        "url": "http://arxiv.org/abs/2307.15063v1",
+        "pub_date": "2023-07-27",
+        "summary": "The goal of Online Domain Adaptation for semantic segmentation is to handle\nunforeseeable domain changes that occur during deployment, like sudden weather\nevents. However, the high computational costs associated with brute-force\nadaptation make this paradigm unfeasible for real-world applications. In this\npaper we propose HAMLET, a Hardware-Aware Modular Least Expensive Training\nframework for real-time domain adaptation. Our approach includes a\nhardware-aware back-propagation orchestration agent (HAMT) and a dedicated\ndomain-shift detector that enables active control over when and how the model\nis adapted (LT). Thanks to these advancements, our approach is capable of\nperforming semantic segmentation while simultaneously adapting at more than\n29FPS on a single consumer-grade GPU. Our framework's encouraging accuracy and\nspeed trade-off is demonstrated on OnDA and SHIFT benchmarks through\nexperimental results.",
+        "translated": ""
+    },
+    {
+        "title": "Self-Supervised Visual Acoustic Matching",
+        "url": "http://arxiv.org/abs/2307.15064v1",
+        "pub_date": "2023-07-27",
+        "summary": "Acoustic matching aims to re-synthesize an audio clip to sound as if it were\nrecorded in a target acoustic environment. Existing methods assume access to\npaired training data, where the audio is observed in both source and target\nenvironments, but this limits the diversity of training data or requires the\nuse of simulated data or heuristics to create paired samples. We propose a\nself-supervised approach to visual acoustic matching where training samples\ninclude only the target scene image and audio -- without acoustically\nmismatched source audio for reference. Our approach jointly learns to\ndisentangle room acoustics and re-synthesize audio into the target environment,\nvia a conditional GAN framework and a novel metric that quantifies the level of\nresidual acoustic information in the de-biased audio. Training with either\nin-the-wild web data or simulated data, we demonstrate it outperforms the\nstate-of-the-art on multiple challenging datasets and a wide variety of\nreal-world audio and environments.",
+        "translated": ""
+    },
+    {
+        "title": "The RoboDepth Challenge: Methods and Advancements Towards Robust Depth\n  Estimation",
+        "url": "http://arxiv.org/abs/2307.15061v1",
+        "pub_date": "2023-07-27",
+        "summary": "Accurate depth estimation under out-of-distribution (OoD) scenarios, such as\nadverse weather conditions, sensor failure, and noise contamination, is\ndesirable for safety-critical applications. Existing depth estimation systems,\nhowever, suffer inevitably from real-world corruptions and perturbations and\nare struggled to provide reliable depth predictions under such cases. In this\npaper, we summarize the winning solutions from the RoboDepth Challenge -- an\nacademic competition designed to facilitate and advance robust OoD depth\nestimation. This challenge was developed based on the newly established KITTI-C\nand NYUDepth2-C benchmarks. We hosted two stand-alone tracks, with an emphasis\non robust self-supervised and robust fully-supervised depth estimation,\nrespectively. Out of more than two hundred participants, nine unique and\ntop-performing solutions have appeared, with novel designs ranging from the\nfollowing aspects: spatial- and frequency-domain augmentations, masked image\nmodeling, image restoration and super-resolution, adversarial training,\ndiffusion-based noise suppression, vision-language pre-training, learned model\nensembling, and hierarchical feature enhancement. Extensive experimental\nanalyses along with insightful observations are drawn to better understand the\nrationale behind each design. We hope this challenge could lay a solid\nfoundation for future research on robust and reliable depth estimation and\nbeyond. The datasets, competition toolkit, workshop recordings, and source code\nfrom the winning teams are publicly available on the challenge website.",
+        "translated": ""
+    },
+    {
+        "title": "MARS: An Instance-aware, Modular and Realistic Simulator for Autonomous\n  Driving",
+        "url": "http://arxiv.org/abs/2307.15058v1",
+        "pub_date": "2023-07-27",
+        "summary": "Nowadays, autonomous cars can drive smoothly in ordinary cases, and it is\nwidely recognized that realistic sensor simulation will play a critical role in\nsolving remaining corner cases by simulating them. To this end, we propose an\nautonomous driving simulator based upon neural radiance fields (NeRFs).\nCompared with existing works, ours has three notable features: (1)\nInstance-aware. Our simulator models the foreground instances and background\nenvironments separately with independent networks so that the static (e.g.,\nsize and appearance) and dynamic (e.g., trajectory) properties of instances can\nbe controlled separately. (2) Modular. Our simulator allows flexible switching\nbetween different modern NeRF-related backbones, sampling strategies, input\nmodalities, etc. We expect this modular design to boost academic progress and\nindustrial deployment of NeRF-based autonomous driving simulation. (3)\nRealistic. Our simulator set new state-of-the-art photo-realism results given\nthe best module selection. Our simulator will be open-sourced while most of our\ncounterparts are not. Project page: https://open-air-sun.github.io/mars/.",
+        "translated": ""
+    },
+    {
+        "title": "PointOdyssey: A Large-Scale Synthetic Dataset for Long-Term Point\n  Tracking",
+        "url": "http://arxiv.org/abs/2307.15055v1",
+        "pub_date": "2023-07-27",
+        "summary": "We introduce PointOdyssey, a large-scale synthetic dataset, and data\ngeneration framework, for the training and evaluation of long-term fine-grained\ntracking algorithms. Our goal is to advance the state-of-the-art by placing\nemphasis on long videos with naturalistic motion. Toward the goal of\nnaturalism, we animate deformable characters using real-world motion capture\ndata, we build 3D scenes to match the motion capture environments, and we\nrender camera viewpoints using trajectories mined via structure-from-motion on\nreal videos. We create combinatorial diversity by randomizing character\nappearance, motion profiles, materials, lighting, 3D assets, and atmospheric\neffects. Our dataset currently includes 104 videos, averaging 2,000 frames\nlong, with orders of magnitude more correspondence annotations than prior work.\nWe show that existing methods can be trained from scratch in our dataset and\noutperform the published variants. Finally, we introduce modifications to the\nPIPs point tracking method, greatly widening its temporal receptive field,\nwhich improves its performance on PointOdyssey as well as on two real-world\nbenchmarks. Our data and code are publicly available at:\nhttps://pointodyssey.com",
+        "translated": ""
     }
 ]
