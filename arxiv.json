@@ -3008,5 +3008,40 @@
         "pub_date": "2023-08-25",
         "summary": "Vision Transformers achieve impressive accuracy across a range of visual\nrecognition tasks. Unfortunately, their accuracy frequently comes with high\ncomputational costs. This is a particular issue in video recognition, where\nmodels are often applied repeatedly across frames or temporal chunks. In this\nwork, we exploit temporal redundancy between subsequent inputs to reduce the\ncost of Transformers for video processing. We describe a method for identifying\nand re-processing only those tokens that have changed significantly over time.\nOur proposed family of models, Eventful Transformers, can be converted from\nexisting Transformers (often without any re-training) and give adaptive control\nover the compute cost at runtime. We evaluate our method on large-scale\ndatasets for video object detection (ImageNet VID) and action recognition\n(EPIC-Kitchens 100). Our approach leads to significant computational savings\n(on the order of 2-4x) with only minor reductions in accuracy.",
         "translated": ""
+    },
+    {
+        "title": "Efficient Discovery and Effective Evaluation of Visual Perceptual\n  Similarity: A Benchmark and Beyond",
+        "url": "http://arxiv.org/abs/2308.14753v1",
+        "pub_date": "2023-08-28",
+        "summary": "Visual similarities discovery (VSD) is an important task with broad\ne-commerce applications. Given an image of a certain object, the goal of VSD is\nto retrieve images of different objects with high perceptual visual similarity.\nAlthough being a highly addressed problem, the evaluation of proposed methods\nfor VSD is often based on a proxy of an identification-retrieval task,\nevaluating the ability of a model to retrieve different images of the same\nobject. We posit that evaluating VSD methods based on identification tasks is\nlimited, and faithful evaluation must rely on expert annotations. In this\npaper, we introduce the first large-scale fashion visual similarity benchmark\ndataset, consisting of more than 110K expert-annotated image pairs. Besides\nthis major contribution, we share insight from the challenges we faced while\ncurating this dataset. Based on these insights, we propose a novel and\nefficient labeling procedure that can be applied to any dataset. Our analysis\nexamines its limitations and inductive biases, and based on these findings, we\npropose metrics to mitigate those limitations. Though our primary focus lies on\nvisual similarity, the methodologies we present have broader applications for\ndiscovering and evaluating perceptual similarity across various domains.",
+        "translated": ""
+    },
+    {
+        "title": "MagicEdit: High-Fidelity and Temporally Coherent Video Editing",
+        "url": "http://arxiv.org/abs/2308.14749v1",
+        "pub_date": "2023-08-28",
+        "summary": "In this report, we present MagicEdit, a surprisingly simple yet effective\nsolution to the text-guided video editing task. We found that high-fidelity and\ntemporally coherent video-to-video translation can be achieved by explicitly\ndisentangling the learning of content, structure and motion signals during\ntraining. This is in contradict to most existing methods which attempt to\njointly model both the appearance and temporal representation within a single\nframework, which we argue, would lead to degradation in per-frame quality.\nDespite its simplicity, we show that MagicEdit supports various downstream\nvideo editing tasks, including video stylization, local editing, video-MagicMix\nand video outpainting.",
+        "translated": ""
+    },
+    {
+        "title": "MagicAvatar: Multimodal Avatar Generation and Animation",
+        "url": "http://arxiv.org/abs/2308.14748v1",
+        "pub_date": "2023-08-28",
+        "summary": "This report presents MagicAvatar, a framework for multimodal video generation\nand animation of human avatars. Unlike most existing methods that generate\navatar-centric videos directly from multimodal inputs (e.g., text prompts),\nMagicAvatar explicitly disentangles avatar video generation into two stages:\n(1) multimodal-to-motion and (2) motion-to-video generation. The first stage\ntranslates the multimodal inputs into motion/ control signals (e.g., human\npose, depth, DensePose); while the second stage generates avatar-centric video\nguided by these motion signals. Additionally, MagicAvatar supports avatar\nanimation by simply providing a few images of the target person. This\ncapability enables the animation of the provided human identity according to\nthe specific motion derived from the first stage. We demonstrate the\nflexibility of MagicAvatar through various applications, including text-guided\nand video-guided avatar generation, as well as multimodal avatar animation.",
+        "translated": ""
+    },
+    {
+        "title": "CoVR: Learning Composed Video Retrieval from Web Video Captions",
+        "url": "http://arxiv.org/abs/2308.14746v1",
+        "pub_date": "2023-08-28",
+        "summary": "Composed Image Retrieval (CoIR) has recently gained popularity as a task that\nconsiders both text and image queries together, to search for relevant images\nin a database. Most CoIR approaches require manually annotated datasets,\ncomprising image-text-image triplets, where the text describes a modification\nfrom the query image to the target image. However, manual curation of CoIR\ntriplets is expensive and prevents scalability. In this work, we instead\npropose a scalable automatic dataset creation methodology that generates\ntriplets given video-caption pairs, while also expanding the scope of the task\nto include composed video retrieval (CoVR). To this end, we mine paired videos\nwith a similar caption from a large database, and leverage a large language\nmodel to generate the corresponding modification text. Applying this\nmethodology to the extensive WebVid2M collection, we automatically construct\nour WebVid-CoVR dataset, resulting in 1.6 million triplets. Moreover, we\nintroduce a new benchmark for CoVR with a manually annotated evaluation set,\nalong with baseline results. Our experiments further demonstrate that training\na CoVR model on our dataset effectively transfers to CoIR, leading to improved\nstate-of-the-art performance in the zero-shot setup on both the CIRR and\nFashionIQ benchmarks. Our code, datasets, and models are publicly available at\nhttps://imagine.enpc.fr/~ventural/covr.",
+        "translated": ""
+    },
+    {
+        "title": "Total Selfie: Generating Full-Body Selfies",
+        "url": "http://arxiv.org/abs/2308.14740v1",
+        "pub_date": "2023-08-28",
+        "summary": "We present a method to generate full-body selfies -- photos that you take of\nyourself, but capturing your whole body as if someone else took the photo of\nyou from a few feet away. Our approach takes as input a pre-captured video of\nyour body, a target pose photo, and a selfie + background pair for each\nlocation. We introduce a novel diffusion-based approach to combine all of this\ninformation into high quality, well-composed photos of you with the desired\npose and background.",
+        "translated": ""
     }
 ]
