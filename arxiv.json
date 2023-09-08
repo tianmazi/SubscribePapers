@@ -3253,5 +3253,40 @@
         "pub_date": "2023-09-06",
         "summary": "This article describes a multi-modal method using simulated Lidar data via\nray tracing and image pixel loss with differentiable rendering to optimize an\nobject's position with respect to an observer or some referential objects in a\ncomputer graphics scene. Object position optimization is completed using\ngradient descent with the loss function being influenced by both modalities.\nTypical object placement optimization is done using image pixel loss with\ndifferentiable rendering only, this work shows the use of a second modality\n(Lidar) leads to faster convergence. This method of fusing sensor input\npresents a potential usefulness for autonomous vehicles, as these methods can\nbe used to establish the locations of multiple actors in a scene. This article\nalso presents a method for the simulation of multiple types of data to be used\nin the training of autonomous vehicles.",
         "translated": ""
+    },
+    {
+        "title": "ImageBind-LLM: Multi-modality Instruction Tuning",
+        "url": "http://arxiv.org/abs/2309.03905v1",
+        "pub_date": "2023-09-07",
+        "summary": "We present ImageBind-LLM, a multi-modality instruction tuning method of large\nlanguage models (LLMs) via ImageBind. Existing works mainly focus on language\nand image instruction tuning, different from which, our ImageBind-LLM can\nrespond to multi-modality conditions, including audio, 3D point clouds, video,\nand their embedding-space arithmetic by only image-text alignment training.\nDuring training, we adopt a learnable bind network to align the embedding space\nbetween LLaMA and ImageBind's image encoder. Then, the image features\ntransformed by the bind network are added to word tokens of all layers in\nLLaMA, which progressively injects visual instructions via an attention-free\nand zero-initialized gating mechanism. Aided by the joint embedding of\nImageBind, the simple image-text training enables our model to exhibit superior\nmulti-modality instruction-following capabilities. During inference, the\nmulti-modality inputs are fed into the corresponding ImageBind encoders, and\nprocessed by a proposed visual cache model for further cross-modal embedding\nenhancement. The training-free cache model retrieves from three million image\nfeatures extracted by ImageBind, which effectively mitigates the\ntraining-inference modality discrepancy. Notably, with our approach,\nImageBind-LLM can respond to instructions of diverse modalities and demonstrate\nsignificant language generation quality. Code is released at\nhttps://github.com/OpenGVLab/LLaMA-Adapter.",
+        "translated": ""
+    },
+    {
+        "title": "Exploring Sparse MoE in GANs for Text-conditioned Image Synthesis",
+        "url": "http://arxiv.org/abs/2309.03904v1",
+        "pub_date": "2023-09-07",
+        "summary": "Due to the difficulty in scaling up, generative adversarial networks (GANs)\nseem to be falling from grace on the task of text-conditioned image synthesis.\nSparsely-activated mixture-of-experts (MoE) has recently been demonstrated as a\nvalid solution to training large-scale models with limited computational\nresources. Inspired by such a philosophy, we present Aurora, a GAN-based\ntext-to-image generator that employs a collection of experts to learn feature\nprocessing, together with a sparse router to help select the most suitable\nexpert for each feature point. To faithfully decode the sampling stochasticity\nand the text condition to the final synthesis, our router adaptively makes its\ndecision by taking into account the text-integrated global latent code. At\n64x64 image resolution, our model trained on LAION2B-en and COYO-700M achieves\n6.2 zero-shot FID on MS COCO. We release the code and checkpoints to facilitate\nthe community for further development.",
+        "translated": ""
+    },
+    {
+        "title": "Tracking Anything with Decoupled Video Segmentation",
+        "url": "http://arxiv.org/abs/2309.03903v1",
+        "pub_date": "2023-09-07",
+        "summary": "Training data for video segmentation are expensive to annotate. This impedes\nextensions of end-to-end algorithms to new video segmentation tasks, especially\nin large-vocabulary settings. To 'track anything' without training on video\ndata for every individual task, we develop a decoupled video segmentation\napproach (DEVA), composed of task-specific image-level segmentation and\nclass/task-agnostic bi-directional temporal propagation. Due to this design, we\nonly need an image-level model for the target task (which is cheaper to train)\nand a universal temporal propagation model which is trained once and\ngeneralizes across tasks. To effectively combine these two modules, we use\nbi-directional propagation for (semi-)online fusion of segmentation hypotheses\nfrom different frames to generate a coherent segmentation. We show that this\ndecoupled formulation compares favorably to end-to-end approaches in several\ndata-scarce tasks including large-vocabulary video panoptic segmentation,\nopen-world video segmentation, referring video segmentation, and unsupervised\nvideo object segmentation. Code is available at:\nhttps://hkchengrex.github.io/Tracking-Anything-with-DEVA",
+        "translated": ""
+    },
+    {
+        "title": "Learning Continuous Exposure Value Representations for Single-Image HDR\n  Reconstruction",
+        "url": "http://arxiv.org/abs/2309.03900v1",
+        "pub_date": "2023-09-07",
+        "summary": "Deep learning is commonly used to reconstruct HDR images from LDR images. LDR\nstack-based methods are used for single-image HDR reconstruction, generating an\nHDR image from a deep learning-generated LDR stack. However, current methods\ngenerate the stack with predetermined exposure values (EVs), which may limit\nthe quality of HDR reconstruction. To address this, we propose the continuous\nexposure value representation (CEVR), which uses an implicit function to\ngenerate LDR images with arbitrary EVs, including those unseen during training.\nOur approach generates a continuous stack with more images containing diverse\nEVs, significantly improving HDR reconstruction. We use a cycle training\nstrategy to supervise the model in generating continuous EV LDR images without\ncorresponding ground truths. Our CEVR model outperforms existing methods, as\ndemonstrated by experimental results.",
+        "translated": ""
+    },
+    {
+        "title": "The Making and Breaking of Camouflage",
+        "url": "http://arxiv.org/abs/2309.03899v1",
+        "pub_date": "2023-09-07",
+        "summary": "Not all camouflages are equally effective, as even a partially visible\ncontour or a slight color difference can make the animal stand out and break\nits camouflage. In this paper, we address the question of what makes a\ncamouflage successful, by proposing three scores for automatically assessing\nits effectiveness. In particular, we show that camouflage can be measured by\nthe similarity between background and foreground features and boundary\nvisibility. We use these camouflage scores to assess and compare all available\ncamouflage datasets. We also incorporate the proposed camouflage score into a\ngenerative model as an auxiliary loss and show that effective camouflage images\nor videos can be synthesised in a scalable manner. The generated synthetic\ndataset is used to train a transformer-based model for segmenting camouflaged\nanimals in videos. Experimentally, we demonstrate state-of-the-art camouflage\nbreaking performance on the public MoCA-Mask benchmark.",
+        "translated": ""
     }
 ]
