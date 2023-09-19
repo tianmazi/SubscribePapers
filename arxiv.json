@@ -3498,5 +3498,40 @@
         "pub_date": "2023-09-15",
         "summary": "Object detection is a crucial component of autonomous driving, and many\ndetection applications have been developed to address this task. These\napplications often rely on backbone architectures, which extract representation\nfeatures from inputs to perform the object detection task. The quality of the\nfeatures extracted by the backbone architecture can have a significant impact\non the overall detection performance. Many researchers have focused on\ndeveloping new and improved backbone architectures to enhance the efficiency\nand accuracy of object detection applications. While these backbone\narchitectures have shown state-of-the-art performance on generic object\ndetection datasets like MS-COCO and PASCAL-VOC, evaluating their performance\nunder an autonomous driving environment has not been previously explored. To\naddress this, our study evaluates three well-known autonomous vehicle datasets,\nnamely KITTI, NuScenes, and BDD, to compare the performance of different\nbackbone architectures on object detection tasks.",
         "translated": ""
+    },
+    {
+        "title": "General In-Hand Object Rotation with Vision and Touch",
+        "url": "http://arxiv.org/abs/2309.09979v1",
+        "pub_date": "2023-09-18",
+        "summary": "We introduce RotateIt, a system that enables fingertip-based object rotation\nalong multiple axes by leveraging multimodal sensory inputs. Our system is\ntrained in simulation, where it has access to ground-truth object shapes and\nphysical properties. Then we distill it to operate on realistic yet noisy\nsimulated visuotactile and proprioceptive sensory inputs. These multimodal\ninputs are fused via a visuotactile transformer, enabling online inference of\nobject shapes and physical properties during deployment. We show significant\nperformance improvements over prior methods and the importance of visual and\ntactile sensing.",
+        "translated": ""
+    },
+    {
+        "title": "GEDepth: Ground Embedding for Monocular Depth Estimation",
+        "url": "http://arxiv.org/abs/2309.09975v1",
+        "pub_date": "2023-09-18",
+        "summary": "Monocular depth estimation is an ill-posed problem as the same 2D image can\nbe projected from infinite 3D scenes. Although the leading algorithms in this\nfield have reported significant improvement, they are essentially geared to the\nparticular compound of pictorial observations and camera parameters (i.e.,\nintrinsics and extrinsics), strongly limiting their generalizability in\nreal-world scenarios. To cope with this challenge, this paper proposes a novel\nground embedding module to decouple camera parameters from pictorial cues, thus\npromoting the generalization capability. Given camera parameters, the proposed\nmodule generates the ground depth, which is stacked with the input image and\nreferenced in the final depth prediction. A ground attention is designed in the\nmodule to optimally combine ground depth with residual depth. Our ground\nembedding is highly flexible and lightweight, leading to a plug-in module that\nis amenable to be integrated into various depth estimation networks.\nExperiments reveal that our approach achieves the state-of-the-art results on\npopular benchmarks, and more importantly, renders significant generalization\nimprovement on a wide range of cross-domain tests.",
+        "translated": ""
+    },
+    {
+        "title": "An Empirical Study of Scaling Instruct-Tuned Large Multimodal Models",
+        "url": "http://arxiv.org/abs/2309.09958v1",
+        "pub_date": "2023-09-18",
+        "summary": "Visual instruction tuning has recently shown encouraging progress with\nopen-source large multimodal models (LMM) such as LLaVA and MiniGPT-4. However,\nmost existing studies of open-source LMM are performed using models with 13B\nparameters or smaller. In this paper we present an empirical study of scaling\nLLaVA up to 33B and 65B/70B, and share our findings from our explorations in\nimage resolution, data mixing and parameter-efficient training methods such as\nLoRA/QLoRA. These are evaluated by their impact on the multi-modal and language\ncapabilities when completing real-world tasks in the wild.\n  We find that scaling LMM consistently enhances model performance and improves\nlanguage capabilities, and performance of LoRA/QLoRA tuning of LMM are\ncomparable to the performance of full-model fine-tuning. Additionally, the\nstudy highlights the importance of higher image resolutions and mixing\nmultimodal-language data to improve LMM performance, and visual instruction\ntuning can sometimes improve LMM's pure language capability. We hope that this\nstudy makes state-of-the-art LMM research at a larger scale more accessible,\nthus helping establish stronger baselines for future research. Code and\ncheckpoints will be made public.",
+        "translated": ""
+    },
+    {
+        "title": "vSHARP: variable Splitting Half-quadratic ADMM algorithm for\n  Reconstruction of inverse-Problems",
+        "url": "http://arxiv.org/abs/2309.09954v1",
+        "pub_date": "2023-09-18",
+        "summary": "Medical Imaging (MI) tasks, such as accelerated Parallel Magnetic Resonance\nImaging (MRI), often involve reconstructing an image from noisy or incomplete\nmeasurements. This amounts to solving ill-posed inverse problems, where a\nsatisfactory closed-form analytical solution is not available. Traditional\nmethods such as Compressed Sensing (CS) in MRI reconstruction can be\ntime-consuming or prone to obtaining low-fidelity images. Recently, a plethora\nof supervised and self-supervised Deep Learning (DL) approaches have\ndemonstrated superior performance in inverse-problem solving, surpassing\nconventional methods. In this study, we propose vSHARP (variable Splitting\nHalf-quadratic ADMM algorithm for Reconstruction of inverse Problems), a novel\nDL-based method for solving ill-posed inverse problems arising in MI. vSHARP\nutilizes the Half-Quadratic Variable Splitting method and employs the\nAlternating Direction Method of Multipliers (ADMM) to unroll the optimization\nprocess. For data consistency, vSHARP unrolls a differentiable gradient descent\nprocess in the image domain, while a DL-based denoiser, such as a U-Net\narchitecture, is applied to enhance image quality. vSHARP also employs a\ndilated-convolution DL-based model to predict the Lagrange multipliers for the\nADMM initialization. We evaluate the proposed model by applying it to the task\nof accelerated Parallel MRI Reconstruction on two distinct datasets. We present\na comparative analysis of our experimental results with state-of-the-art\napproaches, highlighting the superior performance of vSHARP.",
+        "translated": ""
+    },
+    {
+        "title": "End-to-End Learned Event- and Image-based Visual Odometry",
+        "url": "http://arxiv.org/abs/2309.09947v1",
+        "pub_date": "2023-09-18",
+        "summary": "Visual Odometry (VO) is crucial for autonomous robotic navigation, especially\nin GPS-denied environments like planetary terrains. While standard RGB cameras\nstruggle in low-light or high-speed motion, event-based cameras offer high\ndynamic range and low latency. However, seamlessly integrating asynchronous\nevent data with synchronous frames remains challenging. We introduce RAMP-VO,\nthe first end-to-end learned event- and image-based VO system. It leverages\nnovel Recurrent, Asynchronous, and Massively Parallel (RAMP) encoders that are\n8x faster and 20% more accurate than existing asynchronous encoders. RAMP-VO\nfurther employs a novel pose forecasting technique to predict future poses for\ninitialization. Despite being trained only in simulation, RAMP-VO outperforms\nimage- and event-based methods by 52% and 20%, respectively, on traditional,\nreal-world benchmarks as well as newly introduced Apollo and Malapert landing\nsequences, paving the way for robust and asynchronous VO in space.",
+        "translated": ""
     }
 ]
