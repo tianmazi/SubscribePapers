@@ -3603,5 +3603,40 @@
         "pub_date": "2023-09-20",
         "summary": "Knowledge distillation (KD) is a powerful model compression technique broadly\nused in practical deep learning applications. It is focused on training a small\nstudent network to mimic a larger teacher network. While it is widely known\nthat KD can offer an improvement to student generalization in i.i.d setting,\nits performance under domain shift, i.e. the performance of student networks on\ndata from domains unseen during training, has received little attention in the\nliterature. In this paper we make a step towards bridging the research fields\nof knowledge distillation and domain generalization. We show that weight\naveraging techniques proposed in domain generalization literature, such as SWAD\nand SMA, also improve the performance of knowledge distillation under domain\nshift. In addition, we propose a simplistic weight averaging strategy that does\nnot require evaluation on validation data during training and show that it\nperforms on par with SWAD and SMA when applied to KD. We name our final\ndistillation approach Weight-Averaged Knowledge Distillation (WAKD).",
         "translated": ""
+    },
+    {
+        "title": "Active Stereo Without Pattern Projector",
+        "url": "http://arxiv.org/abs/2309.12315v1",
+        "pub_date": "2023-09-21",
+        "summary": "This paper proposes a novel framework integrating the principles of active\nstereo in standard passive camera systems without a physical pattern projector.\nWe virtually project a pattern over the left and right images according to the\nsparse measurements obtained from a depth sensor. Any such devices can be\nseamlessly plugged into our framework, allowing for the deployment of a virtual\nactive stereo setup in any possible environment, overcoming the limitation of\npattern projectors, such as limited working range or environmental conditions.\nExperiments on indoor/outdoor datasets, featuring both long and close-range,\nsupport the seamless effectiveness of our approach, boosting the accuracy of\nboth stereo algorithms and deep networks.",
+        "translated": ""
+    },
+    {
+        "title": "TinyCLIP: CLIP Distillation via Affinity Mimicking and Weight\n  Inheritance",
+        "url": "http://arxiv.org/abs/2309.12314v1",
+        "pub_date": "2023-09-21",
+        "summary": "In this paper, we propose a novel cross-modal distillation method, called\nTinyCLIP, for large-scale language-image pre-trained models. The method\nintroduces two core techniques: affinity mimicking and weight inheritance.\nAffinity mimicking explores the interaction between modalities during\ndistillation, enabling student models to mimic teachers' behavior of learning\ncross-modal feature alignment in a visual-linguistic affinity space. Weight\ninheritance transmits the pre-trained weights from the teacher models to their\nstudent counterparts to improve distillation efficiency. Moreover, we extend\nthe method into a multi-stage progressive distillation to mitigate the loss of\ninformative weights during extreme compression. Comprehensive experiments\ndemonstrate the efficacy of TinyCLIP, showing that it can reduce the size of\nthe pre-trained CLIP ViT-B/32 by 50%, while maintaining comparable zero-shot\nperformance. While aiming for comparable performance, distillation with weight\ninheritance can speed up the training by 1.4 - 7.8 $\\times$ compared to\ntraining from scratch. Moreover, our TinyCLIP ViT-8M/16, trained on YFCC-15M,\nachieves an impressive zero-shot top-1 accuracy of 41.1% on ImageNet,\nsurpassing the original CLIP ViT-B/16 by 3.5% while utilizing only 8.9%\nparameters. Finally, we demonstrate the good transferability of TinyCLIP in\nvarious downstream tasks. Code and models will be open-sourced at\nhttps://aka.ms/tinyclip.",
+        "translated": ""
+    },
+    {
+        "title": "ForceSight: Text-Guided Mobile Manipulation with Visual-Force Goals",
+        "url": "http://arxiv.org/abs/2309.12312v1",
+        "pub_date": "2023-09-21",
+        "summary": "We present ForceSight, a system for text-guided mobile manipulation that\npredicts visual-force goals using a deep neural network. Given a single RGBD\nimage combined with a text prompt, ForceSight determines a target end-effector\npose in the camera frame (kinematic goal) and the associated forces (force\ngoal). Together, these two components form a visual-force goal. Prior work has\ndemonstrated that deep models outputting human-interpretable kinematic goals\ncan enable dexterous manipulation by real robots. Forces are critical to\nmanipulation, yet have typically been relegated to lower-level execution in\nthese systems. When deployed on a mobile manipulator equipped with an\neye-in-hand RGBD camera, ForceSight performed tasks such as precision grasps,\ndrawer opening, and object handovers with an 81% success rate in unseen\nenvironments with object instances that differed significantly from the\ntraining data. In a separate experiment, relying exclusively on visual servoing\nand ignoring force goals dropped the success rate from 90% to 45%,\ndemonstrating that force goals can significantly enhance performance. The\nappendix, videos, code, and trained models are available at\nhttps://force-sight.github.io/.",
+        "translated": ""
+    },
+    {
+        "title": "LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language\n  Model as an Agent",
+        "url": "http://arxiv.org/abs/2309.12311v1",
+        "pub_date": "2023-09-21",
+        "summary": "3D visual grounding is a critical skill for household robots, enabling them\nto navigate, manipulate objects, and answer questions based on their\nenvironment. While existing approaches often rely on extensive labeled data or\nexhibit limitations in handling complex language queries, we propose\nLLM-Grounder, a novel zero-shot, open-vocabulary, Large Language Model\n(LLM)-based 3D visual grounding pipeline. LLM-Grounder utilizes an LLM to\ndecompose complex natural language queries into semantic constituents and\nemploys a visual grounding tool, such as OpenScene or LERF, to identify objects\nin a 3D scene. The LLM then evaluates the spatial and commonsense relations\namong the proposed objects to make a final grounding decision. Our method does\nnot require any labeled training data and can generalize to novel 3D scenes and\narbitrary text queries. We evaluate LLM-Grounder on the ScanRefer benchmark and\ndemonstrate state-of-the-art zero-shot grounding accuracy. Our findings\nindicate that LLMs significantly improve the grounding capability, especially\nfor complex language queries, making LLM-Grounder an effective approach for 3D\nvision-language tasks in robotics. Videos and interactive demos can be found on\nthe project website https://chat-with-nerf.github.io/ .",
+        "translated": ""
+    },
+    {
+        "title": "TalkNCE: Improving Active Speaker Detection with Talk-Aware Contrastive\n  Learning",
+        "url": "http://arxiv.org/abs/2309.12306v1",
+        "pub_date": "2023-09-21",
+        "summary": "The goal of this work is Active Speaker Detection (ASD), a task to determine\nwhether a person is speaking or not in a series of video frames. Previous works\nhave dealt with the task by exploring network architectures while learning\neffective representations has been less explored. In this work, we propose\nTalkNCE, a novel talk-aware contrastive loss. The loss is only applied to part\nof the full segments where a person on the screen is actually speaking. This\nencourages the model to learn effective representations through the natural\ncorrespondence of speech and facial movements. Our loss can be jointly\noptimized with the existing objectives for training ASD models without the need\nfor additional supervision or training data. The experiments demonstrate that\nour loss can be easily integrated into the existing ASD frameworks, improving\ntheir performance. Our method achieves state-of-the-art performances on\nAVA-ActiveSpeaker and ASW datasets.",
+        "translated": ""
     }
 ]
