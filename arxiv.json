@@ -3988,5 +3988,40 @@
         "pub_date": "2023-10-06",
         "summary": "Latent Diffusion models (LDMs) have achieved remarkable results in\nsynthesizing high-resolution images. However, the iterative sampling process is\ncomputationally intensive and leads to slow generation. Inspired by Consistency\nModels (song et al.), we propose Latent Consistency Models (LCMs), enabling\nswift inference with minimal steps on any pre-trained LDMs, including Stable\nDiffusion (rombach et al). Viewing the guided reverse diffusion process as\nsolving an augmented probability flow ODE (PF-ODE), LCMs are designed to\ndirectly predict the solution of such ODE in latent space, mitigating the need\nfor numerous iterations and allowing rapid, high-fidelity sampling. Efficiently\ndistilled from pre-trained classifier-free guided diffusion models, a\nhigh-quality 768 x 768 2~4-step LCM takes only 32 A100 GPU hours for training.\nFurthermore, we introduce Latent Consistency Fine-tuning (LCF), a novel method\nthat is tailored for fine-tuning LCMs on customized image datasets. Evaluation\non the LAION-5B-Aesthetics dataset demonstrates that LCMs achieve\nstate-of-the-art text-to-image generation performance with few-step inference.\nProject Page: https://latent-consistency-models.github.io/",
         "translated": ""
+    },
+    {
+        "title": "FLATTEN: optical FLow-guided ATTENtion for consistent text-to-video\n  editing",
+        "url": "http://arxiv.org/abs/2310.05922v1",
+        "pub_date": "2023-10-09",
+        "summary": "Text-to-video editing aims to edit the visual appearance of a source video\nconditional on textual prompts. A major challenge in this task is to ensure\nthat all frames in the edited video are visually consistent. Most recent works\napply advanced text-to-image diffusion models to this task by inflating 2D\nspatial attention in the U-Net into spatio-temporal attention. Although\ntemporal context can be added through spatio-temporal attention, it may\nintroduce some irrelevant information for each patch and therefore cause\ninconsistency in the edited video. In this paper, for the first time, we\nintroduce optical flow into the attention module in the diffusion model's U-Net\nto address the inconsistency issue for text-to-video editing. Our method,\nFLATTEN, enforces the patches on the same flow path across different frames to\nattend to each other in the attention module, thus improving the visual\nconsistency in the edited videos. Additionally, our method is training-free and\ncan be seamlessly integrated into any diffusion-based text-to-video editing\nmethods and improve their visual consistency. Experiment results on existing\ntext-to-video editing benchmarks show that our proposed method achieves the new\nstate-of-the-art performance. In particular, our method excels in maintaining\nthe visual consistency in the edited videos.",
+        "translated": ""
+    },
+    {
+        "title": "SimPLR: A Simple and Plain Transformer for Object Detection and\n  Segmentation",
+        "url": "http://arxiv.org/abs/2310.05920v1",
+        "pub_date": "2023-10-09",
+        "summary": "The ability to detect objects in images at varying scales has played a\npivotal role in the design of modern object detectors. Despite considerable\nprogress in removing handcrafted components using transformers, multi-scale\nfeature maps remain a key factor for their empirical success, even with a plain\nbackbone like the Vision Transformer (ViT). In this paper, we show that this\nreliance on feature pyramids is unnecessary and a transformer-based detector\nwith scale-aware attention enables the plain detector `SimPLR' whose backbone\nand detection head both operate on single-scale features. The plain\narchitecture allows SimPLR to effectively take advantages of self-supervised\nlearning and scaling approaches with ViTs, yielding strong performance compared\nto multi-scale counterparts. We demonstrate through our experiments that when\nscaling to larger backbones, SimPLR indicates better performance than\nend-to-end detectors (Mask2Former) and plain-backbone detectors (ViTDet), while\nconsistently being faster. The code will be released.",
+        "translated": ""
+    },
+    {
+        "title": "Drivable Avatar Clothing: Faithful Full-Body Telepresence with Dynamic\n  Clothing Driven by Sparse RGB-D Input",
+        "url": "http://arxiv.org/abs/2310.05917v1",
+        "pub_date": "2023-10-09",
+        "summary": "Clothing is an important part of human appearance but challenging to model in\nphotorealistic avatars. In this work we present avatars with dynamically moving\nloose clothing that can be faithfully driven by sparse RGB-D inputs as well as\nbody and face motion. We propose a Neural Iterative Closest Point (N-ICP)\nalgorithm that can efficiently track the coarse garment shape given sparse\ndepth input. Given the coarse tracking results, the input RGB-D images are then\nremapped to texel-aligned features, which are fed into the drivable avatar\nmodels to faithfully reconstruct appearance details. We evaluate our method\nagainst recent image-driven synthesis baselines, and conduct a comprehensive\nanalysis of the N-ICP algorithm. We demonstrate that our method can generalize\nto a novel testing environment, while preserving the ability to produce\nhigh-fidelity and faithful clothing dynamics and appearance.",
+        "translated": ""
+    },
+    {
+        "title": "Interpreting CLIP's Image Representation via Text-Based Decomposition",
+        "url": "http://arxiv.org/abs/2310.05916v1",
+        "pub_date": "2023-10-09",
+        "summary": "We investigate the CLIP image encoder by analyzing how individual model\ncomponents affect the final representation. We decompose the image\nrepresentation as a sum across individual image patches, model layers, and\nattention heads, and use CLIP's text representation to interpret the summands.\nInterpreting the attention heads, we characterize each head's role by\nautomatically finding text representations that span its output space, which\nreveals property-specific roles for many heads (e.g. location or shape). Next,\ninterpreting the image patches, we uncover an emergent spatial localization\nwithin CLIP. Finally, we use this understanding to remove spurious features\nfrom CLIP and to create a strong zero-shot image segmenter. Our results\nindicate that a scalable understanding of transformer models is attainable and\ncan be used to repair and improve models.",
+        "translated": ""
+    },
+    {
+        "title": "Streaming Anchor Loss: Augmenting Supervision with Temporal Significance",
+        "url": "http://arxiv.org/abs/2310.05886v1",
+        "pub_date": "2023-10-09",
+        "summary": "Streaming neural network models for fast frame-wise responses to various\nspeech and sensory signals are widely adopted on resource-constrained\nplatforms. Hence, increasing the learning capacity of such streaming models\n(i.e., by adding more parameters) to improve the predictive power may not be\nviable for real-world tasks. In this work, we propose a new loss, Streaming\nAnchor Loss (SAL), to better utilize the given learning capacity by encouraging\nthe model to learn more from essential frames. More specifically, our SAL and\nits focal variations dynamically modulate the frame-wise cross entropy loss\nbased on the importance of the corresponding frames so that a higher loss\npenalty is assigned for frames within the temporal proximity of semantically\ncritical events. Therefore, our loss ensures that the model training focuses on\npredicting the relatively rare but task-relevant frames. Experimental results\nwith standard lightweight convolutional and recurrent streaming networks on\nthree different speech based detection tasks demonstrate that SAL enables the\nmodel to learn the overall task more effectively with improved accuracy and\nlatency, without any additional data, model parameters, or architectural\nchanges.",
+        "translated": ""
     }
 ]
