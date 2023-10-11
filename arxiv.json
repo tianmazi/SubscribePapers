@@ -4023,5 +4023,40 @@
         "pub_date": "2023-10-09",
         "summary": "Streaming neural network models for fast frame-wise responses to various\nspeech and sensory signals are widely adopted on resource-constrained\nplatforms. Hence, increasing the learning capacity of such streaming models\n(i.e., by adding more parameters) to improve the predictive power may not be\nviable for real-world tasks. In this work, we propose a new loss, Streaming\nAnchor Loss (SAL), to better utilize the given learning capacity by encouraging\nthe model to learn more from essential frames. More specifically, our SAL and\nits focal variations dynamically modulate the frame-wise cross entropy loss\nbased on the importance of the corresponding frames so that a higher loss\npenalty is assigned for frames within the temporal proximity of semantically\ncritical events. Therefore, our loss ensures that the model training focuses on\npredicting the relatively rare but task-relevant frames. Experimental results\nwith standard lightweight convolutional and recurrent streaming networks on\nthree different speech based detection tasks demonstrate that SAL enables the\nmodel to learn the overall task more effectively with improved accuracy and\nlatency, without any additional data, model parameters, or architectural\nchanges.",
         "translated": ""
+    },
+    {
+        "title": "AutoAD II: The Sequel -- Who, When, and What in Movie Audio Description",
+        "url": "http://arxiv.org/abs/2310.06838v1",
+        "pub_date": "2023-10-10",
+        "summary": "Audio Description (AD) is the task of generating descriptions of visual\ncontent, at suitable time intervals, for the benefit of visually impaired\naudiences. For movies, this presents notable challenges -- AD must occur only\nduring existing pauses in dialogue, should refer to characters by name, and\nought to aid understanding of the storyline as a whole. To this end, we develop\na new model for automatically generating movie AD, given CLIP visual features\nof the frames, the cast list, and the temporal locations of the speech;\naddressing all three of the 'who', 'when', and 'what' questions: (i) who -- we\nintroduce a character bank consisting of the character's name, the actor that\nplayed the part, and a CLIP feature of their face, for the principal cast of\neach movie, and demonstrate how this can be used to improve naming in the\ngenerated AD; (ii) when -- we investigate several models for determining\nwhether an AD should be generated for a time interval or not, based on the\nvisual content of the interval and its neighbours; and (iii) what -- we\nimplement a new vision-language model for this task, that can ingest the\nproposals from the character bank, whilst conditioning on the visual features\nusing cross-attention, and demonstrate how this improves over previous\narchitectures for AD text generation in an apples-to-apples comparison.",
+        "translated": ""
+    },
+    {
+        "title": "What Does Stable Diffusion Know about the 3D Scene?",
+        "url": "http://arxiv.org/abs/2310.06836v1",
+        "pub_date": "2023-10-10",
+        "summary": "Recent advances in generative models like Stable Diffusion enable the\ngeneration of highly photo-realistic images. Our objective in this paper is to\nprobe the diffusion network to determine to what extent it 'understands'\ndifferent properties of the 3D scene depicted in an image. To this end, we make\nthe following contributions: (i) We introduce a protocol to evaluate whether a\nnetwork models a number of physical 'properties' of the 3D scene by probing for\nexplicit features that represent these properties. The probes are applied on\ndatasets of real images with annotations for the property. (ii) We apply this\nprotocol to properties covering scene geometry, scene material, support\nrelations, lighting, and view dependent measures. (iii) We find that Stable\nDiffusion is good at a number of properties including scene geometry, support\nrelations, shadows and depth, but less performant for occlusion. (iv) We also\napply the probes to other models trained at large-scale, including DINO and\nCLIP, and find their performance inferior to that of Stable Diffusion.",
+        "translated": ""
+    },
+    {
+        "title": "NECO: NEural Collapse Based Out-of-distribution detection",
+        "url": "http://arxiv.org/abs/2310.06823v1",
+        "pub_date": "2023-10-10",
+        "summary": "Detecting out-of-distribution (OOD) data is a critical challenge in machine\nlearning due to model overconfidence, often without awareness of their\nepistemological limits. We hypothesize that ``neural collapse'', a phenomenon\naffecting in-distribution data for models trained beyond loss convergence, also\ninfluences OOD data. To benefit from this interplay, we introduce NECO, a novel\npost-hoc method for OOD detection, which leverages the geometric properties of\n``neural collapse'' and of principal component spaces to identify OOD data. Our\nextensive experiments demonstrate that NECO achieves state-of-the-art results\non both small and large-scale OOD detection tasks while exhibiting strong\ngeneralization capabilities across different network architectures.\nFurthermore, we provide a theoretical explanation for the effectiveness of our\nmethod in OOD detection. We plan to release the code after the anonymity\nperiod.",
+        "translated": ""
+    },
+    {
+        "title": "Neural Bounding",
+        "url": "http://arxiv.org/abs/2310.06822v1",
+        "pub_date": "2023-10-10",
+        "summary": "Bounding volumes are an established concept in computer graphics and vision\ntasks but have seen little change since their early inception. In this work, we\nstudy the use of neural networks as bounding volumes. Our key observation is\nthat bounding, which so far has primarily been considered a problem of\ncomputational geometry, can be redefined as a problem of learning to classify\nspace into free and empty. This learning-based approach is particularly\nadvantageous in high-dimensional spaces, such as animated scenes with complex\nqueries, where neural networks are known to excel. However, unlocking neural\nbounding requires a twist: allowing -- but also limiting -- false positives,\nwhile ensuring that the number of false negatives is strictly zero. We enable\nsuch tight and conservative results using a dynamically-weighted asymmetric\nloss function. Our results show that our neural bounding produces up to an\norder of magnitude fewer false positives than traditional methods.",
+        "translated": ""
+    },
+    {
+        "title": "Uni3D: Exploring Unified 3D Representation at Scale",
+        "url": "http://arxiv.org/abs/2310.06773v1",
+        "pub_date": "2023-10-10",
+        "summary": "Scaling up representations for images or text has been extensively\ninvestigated in the past few years and has led to revolutions in learning\nvision and language. However, scalable representation for 3D objects and scenes\nis relatively unexplored. In this work, we present Uni3D, a 3D foundation model\nto explore the unified 3D representation at scale. Uni3D uses a 2D initialized\nViT end-to-end pretrained to align the 3D point cloud features with the\nimage-text aligned features. Via the simple architecture and pretext task,\nUni3D can leverage abundant 2D pretrained models as initialization and\nimage-text aligned models as the target, unlocking the great potential of 2D\nmodels and scaling-up strategies to the 3D world. We efficiently scale up Uni3D\nto one billion parameters, and set new records on a broad range of 3D tasks,\nsuch as zero-shot classification, few-shot classification, open-world\nunderstanding and part segmentation. We show that the strong Uni3D\nrepresentation also enables applications such as 3D painting and retrieval in\nthe wild. We believe that Uni3D provides a new direction for exploring both\nscaling up and efficiency of the representation in 3D domain.",
+        "translated": ""
     }
 ]
