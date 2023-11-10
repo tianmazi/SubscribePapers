@@ -4758,5 +4758,40 @@
         "pub_date": "2023-11-08",
         "summary": "Foundation models are experiencing a surge in popularity. The Segment\nAnything model (SAM) asserts an ability to segment a wide spectrum of objects\nbut required supervised training at unprecedented scale. We compared SAM's\nperformance (against clinical ground truth) and resources (labeling time,\ncompute) to a modality-specific, label-free self-supervised learning (SSL)\nmethod on 25 measurements for 100 cardiac ultrasounds. SAM performed poorly and\nrequired significantly more labeling and computing resources, demonstrating\nworse efficiency than SSL.",
         "translated": ""
+    },
+    {
+        "title": "Window Attention is Bugged: How not to Interpolate Position Embeddings",
+        "url": "http://arxiv.org/abs/2311.05613v1",
+        "pub_date": "2023-11-09",
+        "summary": "Window attention, position embeddings, and high resolution finetuning are\ncore concepts in the modern transformer era of computer vision. However, we\nfind that naively combining these near ubiquitous components can have a\ndetrimental effect on performance. The issue is simple: interpolating position\nembeddings while using window attention is wrong. We study two state-of-the-art\nmethods that have these three components, namely Hiera and ViTDet, and find\nthat both do indeed suffer from this bug. To fix it, we introduce a simple\nabsolute window position embedding strategy, which solves the bug outright in\nHiera and allows us to increase both speed and performance of the model in\nViTDet. We finally combine the two to obtain HieraDet, which achieves 61.7 box\nmAP on COCO, making it state-of-the-art for models that only use ImageNet-1k\npretraining. This all stems from what is essentially a 3 line bug fix, which we\nname \"absolute win\".",
+        "translated": ""
+    },
+    {
+        "title": "What Do I Hear? Generating Sounds for Visuals with ChatGPT",
+        "url": "http://arxiv.org/abs/2311.05609v1",
+        "pub_date": "2023-11-09",
+        "summary": "This short paper introduces a workflow for generating realistic soundscapes\nfor visual media. In contrast to prior work, which primarily focus on matching\nsounds for on-screen visuals, our approach extends to suggesting sounds that\nmay not be immediately visible but are essential to crafting a convincing and\nimmersive auditory environment. Our key insight is leveraging the reasoning\ncapabilities of language models, such as ChatGPT. In this paper, we describe\nour workflow, which includes creating a scene context, brainstorming sounds,\nand generating the sounds.",
+        "translated": ""
+    },
+    {
+        "title": "Real-Time Neural Rasterization for Large Scenes",
+        "url": "http://arxiv.org/abs/2311.05607v1",
+        "pub_date": "2023-11-09",
+        "summary": "We propose a new method for realistic real-time novel-view synthesis (NVS) of\nlarge scenes. Existing neural rendering methods generate realistic results, but\nprimarily work for small scale scenes (&lt;50 square meters) and have difficulty\nat large scale (&gt;10000 square meters). Traditional graphics-based rasterization\nrendering is fast for large scenes but lacks realism and requires expensive\nmanually created assets. Our approach combines the best of both worlds by\ntaking a moderate-quality scaffold mesh as input and learning a neural texture\nfield and shader to model view-dependant effects to enhance realism, while\nstill using the standard graphics pipeline for real-time rendering. Our method\noutperforms existing neural rendering methods, providing at least 30x faster\nrendering with comparable or better realism for large self-driving and drone\nscenes. Our work is the first to enable real-time rendering of large real-world\nscenes.",
+        "translated": ""
+    },
+    {
+        "title": "3D-QAE: Fully Quantum Auto-Encoding of 3D Point Clouds",
+        "url": "http://arxiv.org/abs/2311.05604v1",
+        "pub_date": "2023-11-09",
+        "summary": "Existing methods for learning 3D representations are deep neural networks\ntrained and tested on classical hardware. Quantum machine learning\narchitectures, despite their theoretically predicted advantages in terms of\nspeed and the representational capacity, have so far not been considered for\nthis problem nor for tasks involving 3D data in general. This paper thus\nintroduces the first quantum auto-encoder for 3D point clouds. Our 3D-QAE\napproach is fully quantum, i.e. all its data processing components are designed\nfor quantum hardware. It is trained on collections of 3D point clouds to\nproduce their compressed representations. Along with finding a suitable\narchitecture, the core challenges in designing such a fully quantum model\ninclude 3D data normalisation and parameter optimisation, and we propose\nsolutions for both these tasks. Experiments on simulated gate-based quantum\nhardware demonstrate that our method outperforms simple classical baselines,\npaving the way for a new research direction in 3D computer vision. The source\ncode is available at https://4dqv.mpi-inf.mpg.de/QAE3D/.",
+        "translated": ""
+    },
+    {
+        "title": "Reconstructing Objects in-the-wild for Realistic Sensor Simulation",
+        "url": "http://arxiv.org/abs/2311.05602v1",
+        "pub_date": "2023-11-09",
+        "summary": "Reconstructing objects from real world data and rendering them at novel views\nis critical to bringing realism, diversity and scale to simulation for robotics\ntraining and testing. In this work, we present NeuSim, a novel approach that\nestimates accurate geometry and realistic appearance from sparse in-the-wild\ndata captured at distance and at limited viewpoints. Towards this goal, we\nrepresent the object surface as a neural signed distance function and leverage\nboth LiDAR and camera sensor data to reconstruct smooth and accurate geometry\nand normals. We model the object appearance with a robust physics-inspired\nreflectance representation effective for in-the-wild data. Our experiments show\nthat NeuSim has strong view synthesis performance on challenging scenarios with\nsparse training views. Furthermore, we showcase composing NeuSim assets into a\nvirtual world and generating realistic multi-sensor data for evaluating\nself-driving perception models.",
+        "translated": ""
     }
 ]
