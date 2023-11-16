@@ -4898,5 +4898,40 @@
         "pub_date": "2023-11-14",
         "summary": "This paper addresses complex challenges in histopathological image analysis\nthrough three key contributions. Firstly, it introduces a fast patch selection\nmethod, FPS, for whole-slide image (WSI) analysis, significantly reducing\ncomputational cost while maintaining accuracy. Secondly, it presents PathDino,\na lightweight histopathology feature extractor with a minimal configuration of\nfive Transformer blocks and only 9 million parameters, markedly fewer than\nalternatives. Thirdly, it introduces a rotation-agnostic representation\nlearning paradigm using self-supervised learning, effectively mitigating\noverfitting. We also show that our compact model outperforms existing\nstate-of-the-art histopathology-specific vision transformers on 12 diverse\ndatasets, including both internal datasets spanning four sites (breast, liver,\nskin, and colorectal) and seven public datasets (PANDA, CAMELYON16, BRACS,\nDigestPath, Kather, PanNuke, and WSSS4LUAD). Notably, even with a training\ndataset of 6 million histopathology patches from The Cancer Genome Atlas\n(TCGA), our approach demonstrates an average 8.5% improvement in patch-level\nmajority vote performance. These contributions provide a robust framework for\nenhancing image analysis in digital pathology, rigorously validated through\nextensive evaluation. Project Page: https://rhazeslab.github.io/PathDino-Page/",
         "translated": ""
+    },
+    {
+        "title": "Single-Image 3D Human Digitization with Shape-Guided Diffusion",
+        "url": "http://arxiv.org/abs/2311.09221v1",
+        "pub_date": "2023-11-15",
+        "summary": "We present an approach to generate a 360-degree view of a person with a\nconsistent, high-resolution appearance from a single input image. NeRF and its\nvariants typically require videos or images from different viewpoints. Most\nexisting approaches taking monocular input either rely on ground-truth 3D scans\nfor supervision or lack 3D consistency. While recent 3D generative models show\npromise of 3D consistent human digitization, these approaches do not generalize\nwell to diverse clothing appearances, and the results lack photorealism. Unlike\nexisting work, we utilize high-capacity 2D diffusion models pretrained for\ngeneral image synthesis tasks as an appearance prior of clothed humans. To\nachieve better 3D consistency while retaining the input identity, we\nprogressively synthesize multiple views of the human in the input image by\ninpainting missing regions with shape-guided diffusion conditioned on\nsilhouette and surface normal. We then fuse these synthesized multi-view images\nvia inverse rendering to obtain a fully textured high-resolution 3D mesh of the\ngiven person. Experiments show that our approach outperforms prior methods and\nachieves photorealistic 360-degree synthesis of a wide range of clothed humans\nwith complex textures from a single image.",
+        "translated": ""
+    },
+    {
+        "title": "DMV3D: Denoising Multi-View Diffusion using 3D Large Reconstruction\n  Model",
+        "url": "http://arxiv.org/abs/2311.09217v1",
+        "pub_date": "2023-11-15",
+        "summary": "We propose \\textbf{DMV3D}, a novel 3D generation approach that uses a\ntransformer-based 3D large reconstruction model to denoise multi-view\ndiffusion. Our reconstruction model incorporates a triplane NeRF representation\nand can denoise noisy multi-view images via NeRF reconstruction and rendering,\nachieving single-stage 3D generation in $\\sim$30s on single A100 GPU. We train\n\\textbf{DMV3D} on large-scale multi-view image datasets of highly diverse\nobjects using only image reconstruction losses, without accessing 3D assets. We\ndemonstrate state-of-the-art results for the single-image reconstruction\nproblem where probabilistic modeling of unseen object parts is required for\ngenerating diverse reconstructions with sharp textures. We also show\nhigh-quality text-to-3D generation results outperforming previous 3D diffusion\nmodels. Our project website is at: https://justimyhxu.github.io/projects/dmv3d/ .",
+        "translated": ""
+    },
+    {
+        "title": "ConvNet vs Transformer, Supervised vs CLIP: Beyond ImageNet Accuracy",
+        "url": "http://arxiv.org/abs/2311.09215v1",
+        "pub_date": "2023-11-15",
+        "summary": "Modern computer vision offers a great variety of models to practitioners, and\nselecting a model from multiple options for specific applications can be\nchallenging. Conventionally, competing model architectures and training\nprotocols are compared by their classification accuracy on ImageNet. However,\nthis single metric does not fully capture performance nuances critical for\nspecialized tasks. In this work, we conduct an in-depth comparative analysis of\nmodel behaviors beyond ImageNet accuracy, for both ConvNet and Vision\nTransformer architectures, each across supervised and CLIP training paradigms.\nAlthough our selected models have similar ImageNet accuracies and compute\nrequirements, we find that they differ in many other aspects: types of\nmistakes, output calibration, transferability, and feature invariance, among\nothers. This diversity in model characteristics, not captured by traditional\nmetrics, highlights the need for more nuanced analysis when choosing among\ndifferent models. Our code is available at\nhttps://github.com/kirill-vish/Beyond-INet.",
+        "translated": ""
+    },
+    {
+        "title": "The Role of Chain-of-Thought in Complex Vision-Language Reasoning Task",
+        "url": "http://arxiv.org/abs/2311.09193v1",
+        "pub_date": "2023-11-15",
+        "summary": "The study explores the effectiveness of the Chain-of-Thought approach, known\nfor its proficiency in language tasks by breaking them down into sub-tasks and\nintermediate steps, in improving vision-language tasks that demand\nsophisticated perception and reasoning. We present the \"Description then\nDecision\" strategy, which is inspired by how humans process signals. This\nstrategy significantly improves probing task performance by 50%, establishing\nthe groundwork for future research on reasoning paradigms in complex\nvision-language tasks.",
+        "translated": ""
+    },
+    {
+        "title": "Domain Aligned CLIP for Few-shot Classification",
+        "url": "http://arxiv.org/abs/2311.09191v1",
+        "pub_date": "2023-11-15",
+        "summary": "Large vision-language representation learning models like CLIP have\ndemonstrated impressive performance for zero-shot transfer to downstream tasks\nwhile largely benefiting from inter-modal (image-text) alignment via\ncontrastive objectives. This downstream performance can further be enhanced by\nfull-scale fine-tuning which is often compute intensive, requires large\nlabelled data, and can reduce out-of-distribution (OOD) robustness.\nFurthermore, sole reliance on inter-modal alignment might overlook the rich\ninformation embedded within each individual modality. In this work, we\nintroduce a sample-efficient domain adaptation strategy for CLIP, termed Domain\nAligned CLIP (DAC), which improves both intra-modal (image-image) and\ninter-modal alignment on target distributions without fine-tuning the main\nmodel. For intra-modal alignment, we introduce a lightweight adapter that is\nspecifically trained with an intra-modal contrastive objective. To improve\ninter-modal alignment, we introduce a simple framework to modulate the\nprecomputed class text embeddings. The proposed few-shot fine-tuning framework\nis computationally efficient, robust to distribution shifts, and does not alter\nCLIP's parameters. We study the effectiveness of DAC by benchmarking on 11\nwidely used image classification tasks with consistent improvements in 16-shot\nclassification upon strong baselines by about 2.3% and demonstrate competitive\nperformance on 4 OOD robustness benchmarks.",
+        "translated": ""
     }
 ]
