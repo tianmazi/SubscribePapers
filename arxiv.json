@@ -5073,5 +5073,40 @@
         "pub_date": "2023-11-21",
         "summary": "Iris recognition systems, operating in the near infrared spectrum (NIR), have\ndemonstrated vulnerability to presentation attacks, where an adversary uses\nartifacts such as cosmetic contact lenses, artificial eyes or printed iris\nimages in order to circumvent the system. At the same time, a number of\neffective presentation attack detection (PAD) methods have been developed.\nThese methods have demonstrated success in detecting artificial eyes (e.g.,\nfake Van Dyke eyes) as presentation attacks. In this work, we seek to alter the\noptical characteristics of artificial eyes by affixing Vanadium Dioxide (VO2)\nfilms on their surface in various spatial configurations. VO2 films can be used\nto selectively transmit NIR light and can, therefore, be used to regulate the\namount of NIR light from the object that is captured by the iris sensor. We\nstudy the impact of such images produced by the sensor on two state-of-the-art\niris PA detection methods. We observe that the addition of VO2 films on the\nsurface of artificial eyes can cause the PA detection methods to misclassify\nthem as bonafide eyes in some cases. This represents a vulnerability that must\nbe systematically analyzed and effectively addressed.",
         "translated": ""
+    },
+    {
+        "title": "Retrieval-Augmented Layout Transformer for Content-Aware Layout\n  Generation",
+        "url": "http://arxiv.org/abs/2311.13602v1",
+        "pub_date": "2023-11-22",
+        "summary": "Content-aware graphic layout generation aims to automatically arrange visual\nelements along with a given content, such as an e-commerce product image. In\nthis paper, we argue that the current layout generation approaches suffer from\nthe limited training data for the high-dimensional layout structure. We show\nthat a simple retrieval augmentation can significantly improve the generation\nquality. Our model, which is named Retrieval-Augmented Layout Transformer\n(RALF), retrieves nearest neighbor layout examples based on an input image and\nfeeds these results into an autoregressive generator. Our model can apply\nretrieval augmentation to various controllable generation tasks and yield\nhigh-quality layouts within a unified architecture. Our extensive experiments\nshow that RALF successfully generates content-aware layouts in both constrained\nand unconstrained settings and significantly outperforms the baselines.",
+        "translated": ""
+    },
+    {
+        "title": "Visual In-Context Prompting",
+        "url": "http://arxiv.org/abs/2311.13601v1",
+        "pub_date": "2023-11-22",
+        "summary": "In-context prompting in large language models (LLMs) has become a prevalent\napproach to improve zero-shot capabilities, but this idea is less explored in\nthe vision domain. Existing visual prompting methods focus on referring\nsegmentation to segment the most relevant object, falling short of addressing\nmany generic vision tasks like open-set segmentation and detection. In this\npaper, we introduce a universal visual in-context prompting framework for both\ntasks. In particular, we build on top of an encoder-decoder architecture, and\ndevelop a versatile prompt encoder to support a variety of prompts like\nstrokes, boxes, and points. We further enhance it to take an arbitrary number\nof reference image segments as the context. Our extensive explorations show\nthat the proposed visual in-context prompting elicits extraordinary referring\nand generic segmentation capabilities to refer and detect, yielding competitive\nperformance to close-set in-domain datasets and showing promising results on\nmany open-set segmentation datasets. By joint training on COCO and SA-1B, our\nmodel achieves $57.7$ PQ on COCO and $23.2$ PQ on ADE20K. Code will be\navailable at https://github.com/UX-Decoder/DINOv.",
+        "translated": ""
+    },
+    {
+        "title": "ZipLoRA: Any Subject in Any Style by Effectively Merging LoRAs",
+        "url": "http://arxiv.org/abs/2311.13600v1",
+        "pub_date": "2023-11-22",
+        "summary": "Methods for finetuning generative models for concept-driven personalization\ngenerally achieve strong results for subject-driven or style-driven generation.\nRecently, low-rank adaptations (LoRA) have been proposed as a\nparameter-efficient way of achieving concept-driven personalization. While\nrecent work explores the combination of separate LoRAs to achieve joint\ngeneration of learned styles and subjects, existing techniques do not reliably\naddress the problem; they often compromise either subject fidelity or style\nfidelity. We propose ZipLoRA, a method to cheaply and effectively merge\nindependently trained style and subject LoRAs in order to achieve generation of\nany user-provided subject in any user-provided style. Experiments on a wide\nrange of subject and style combinations show that ZipLoRA can generate\ncompelling results with meaningful improvements over baselines in subject and\nstyle fidelity while preserving the ability to recontextualize. Project page:\nhttps://ziplora.github.io",
+        "translated": ""
+    },
+    {
+        "title": "T-Rex: Counting by Visual Prompting",
+        "url": "http://arxiv.org/abs/2311.13596v1",
+        "pub_date": "2023-11-22",
+        "summary": "We introduce T-Rex, an interactive object counting model designed to first\ndetect and then count any objects. We formulate object counting as an open-set\nobject detection task with the integration of visual prompts. Users can specify\nthe objects of interest by marking points or boxes on a reference image, and\nT-Rex then detects all objects with a similar pattern. Guided by the visual\nfeedback from T-Rex, users can also interactively refine the counting results\nby prompting on missing or falsely-detected objects. T-Rex has achieved\nstate-of-the-art performance on several class-agnostic counting benchmarks. To\nfurther exploit its potential, we established a new counting benchmark\nencompassing diverse scenarios and challenges. Both quantitative and\nqualitative results show that T-Rex possesses exceptional zero-shot counting\ncapabilities. We also present various practical application scenarios for\nT-Rex, illustrating its potential in the realm of visual prompting.",
+        "translated": ""
+    },
+    {
+        "title": "XAGen: 3D Expressive Human Avatars Generation",
+        "url": "http://arxiv.org/abs/2311.13574v1",
+        "pub_date": "2023-11-22",
+        "summary": "Recent advances in 3D-aware GAN models have enabled the generation of\nrealistic and controllable human body images. However, existing methods focus\non the control of major body joints, neglecting the manipulation of expressive\nattributes, such as facial expressions, jaw poses, hand poses, and so on. In\nthis work, we present XAGen, the first 3D generative model for human avatars\ncapable of expressive control over body, face, and hands. To enhance the\nfidelity of small-scale regions like face and hands, we devise a multi-scale\nand multi-part 3D representation that models fine details. Based on this\nrepresentation, we propose a multi-part rendering technique that disentangles\nthe synthesis of body, face, and hands to ease model training and enhance\ngeometric quality. Furthermore, we design multi-part discriminators that\nevaluate the quality of the generated avatars with respect to their appearance\nand fine-grained control capabilities. Experiments show that XAGen surpasses\nstate-of-the-art methods in terms of realism, diversity, and expressive control\nabilities. Code and data will be made available at\nhttps://showlab.github.io/xagen.",
+        "translated": ""
     }
 ]
