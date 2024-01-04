@@ -5913,5 +5913,40 @@
         "pub_date": "2024-01-02",
         "summary": "Vector quantization-based image semantic communication systems have\nsuccessfully boosted transmission efficiency, but face a challenge with\nconflicting requirements between codebook design and digital constellation\nmodulation. Traditional codebooks need a wide index range, while modulation\nfavors few discrete states. To address this, we propose a multilevel generative\nsemantic communication system with a two-stage training framework. In the first\nstage, we train a high-quality codebook, using a multi-head octonary codebook\n(MOC) to compress the index range. We also integrate a residual vector\nquantization (RVQ) mechanism for effective multilevel communication. In the\nsecond stage, a noise reduction block (NRB) based on Swin Transformer is\nintroduced, coupled with the multilevel codebook from the first stage, serving\nas a high-quality semantic knowledge base (SKB) for generative feature\nrestoration. Experimental results highlight MOC-RVQ's superior performance over\nmethods like BPG or JPEG, even without channel error correction coding.",
         "translated": ""
+    },
+    {
+        "title": "LEAP-VO: Long-term Effective Any Point Tracking for Visual Odometry",
+        "url": "http://arxiv.org/abs/2401.01887v1",
+        "pub_date": "2024-01-03",
+        "summary": "Visual odometry estimates the motion of a moving camera based on visual\ninput. Existing methods, mostly focusing on two-view point tracking, often\nignore the rich temporal context in the image sequence, thereby overlooking the\nglobal motion patterns and providing no assessment of the full trajectory\nreliability. These shortcomings hinder performance in scenarios with occlusion,\ndynamic objects, and low-texture areas. To address these challenges, we present\nthe Long-term Effective Any Point Tracking (LEAP) module. LEAP innovatively\ncombines visual, inter-track, and temporal cues with mindfully selected anchors\nfor dynamic track estimation. Moreover, LEAP's temporal probabilistic\nformulation integrates distribution updates into a learnable iterative\nrefinement module to reason about point-wise uncertainty. Based on these\ntraits, we develop LEAP-VO, a robust visual odometry system adept at handling\nocclusions and dynamic scenes. Our mindful integration showcases a novel\npractice by employing long-term point tracking as the front-end. Extensive\nexperiments demonstrate that the proposed pipeline significantly outperforms\nexisting baselines across various visual odometry benchmarks.",
+        "translated": ""
+    },
+    {
+        "title": "From Audio to Photoreal Embodiment: Synthesizing Humans in Conversations",
+        "url": "http://arxiv.org/abs/2401.01885v1",
+        "pub_date": "2024-01-03",
+        "summary": "We present a framework for generating full-bodied photorealistic avatars that\ngesture according to the conversational dynamics of a dyadic interaction. Given\nspeech audio, we output multiple possibilities of gestural motion for an\nindividual, including face, body, and hands. The key behind our method is in\ncombining the benefits of sample diversity from vector quantization with the\nhigh-frequency details obtained through diffusion to generate more dynamic,\nexpressive motion. We visualize the generated motion using highly\nphotorealistic avatars that can express crucial nuances in gestures (e.g.\nsneers and smirks). To facilitate this line of research, we introduce a\nfirst-of-its-kind multi-view conversational dataset that allows for\nphotorealistic reconstruction. Experiments show our model generates appropriate\nand diverse gestures, outperforming both diffusion- and VQ-only methods.\nFurthermore, our perceptual evaluation highlights the importance of\nphotorealism (vs. meshes) in accurately assessing subtle motion details in\nconversational gestures. Code and dataset available online.",
+        "translated": ""
+    },
+    {
+        "title": "Step length measurement in the wild using FMCW radar",
+        "url": "http://arxiv.org/abs/2401.01868v1",
+        "pub_date": "2024-01-03",
+        "summary": "With an aging population, numerous assistive and monitoring technologies are\nunder development to enable older adults to age in place. To facilitate aging\nin place predicting risk factors such as falls, and hospitalization and\nproviding early interventions are important. Much of the work on ambient\nmonitoring for risk prediction has centered on gait speed analysis, utilizing\nprivacy-preserving sensors like radar. Despite compelling evidence that\nmonitoring step length, in addition to gait speed, is crucial for predicting\nrisk, radar-based methods have not explored step length measurement in the\nhome. Furthermore, laboratory experiments on step length measurement using\nradars are limited to proof of concept studies with few healthy subjects. To\naddress this gap, a radar-based step length measurement system for the home is\nproposed based on detection and tracking using radar point cloud, followed by\nDoppler speed profiling of the torso to obtain step lengths in the home. The\nproposed method was evaluated in a clinical environment, involving 35 frail\nolder adults, to establish its validity. Additionally, the method was assessed\nin people's homes, with 21 frail older adults who had participated in the\nclinical assessment. The proposed radar-based step length measurement method\nwas compared to the gold standard Zeno Walkway Gait Analysis System, revealing\na 4.5cm/8.3% error in a clinical setting. Furthermore, it exhibited excellent\nreliability (ICC(2,k)=0.91, 95% CI 0.82 to 0.96) in uncontrolled home settings.\nThe method also proved accurate in uncontrolled home settings, as indicated by\na strong agreement (ICC(3,k)=0.81 (95% CI 0.53 to 0.92)) between home\nmeasurements and in-clinic assessments.",
+        "translated": ""
+    },
+    {
+        "title": "A Vision Check-up for Language Models",
+        "url": "http://arxiv.org/abs/2401.01862v1",
+        "pub_date": "2024-01-03",
+        "summary": "What does learning to model relationships between strings teach large\nlanguage models (LLMs) about the visual world? We systematically evaluate LLMs'\nabilities to generate and recognize an assortment of visual concepts of\nincreasing complexity and then demonstrate how a preliminary visual\nrepresentation learning system can be trained using models of text. As language\nmodels lack the ability to consume or output visual information as pixels, we\nuse code to represent images in our study. Although LLM-generated images do not\nlook like natural images, results on image generation and the ability of models\nto correct these generated images indicate that precise modeling of strings can\nteach language models about numerous aspects of the visual world. Furthermore,\nexperiments on self-supervised visual representation learning, utilizing images\ngenerated with text models, highlight the potential to train vision models\ncapable of making semantic assessments of natural images using just LLMs.",
+        "translated": ""
+    },
+    {
+        "title": "Synthetic dataset of ID and Travel Document",
+        "url": "http://arxiv.org/abs/2401.01858v1",
+        "pub_date": "2024-01-03",
+        "summary": "This paper presents a new synthetic dataset of ID and travel documents,\ncalled SIDTD. The SIDTD dataset is created to help training and evaluating\nforged ID documents detection systems. Such a dataset has become a necessity as\nID documents contain personal information and a public dataset of real\ndocuments can not be released. Moreover, forged documents are scarce, compared\nto legit ones, and the way they are generated varies from one fraudster to\nanother resulting in a class of high intra-variability. In this paper we\ntrained state-of-the-art models on this dataset and we compare them to the\nperformance achieved in larger, but private, datasets. The creation of this\ndataset will help to document image analysis community to progress in the task\nof ID document verification.",
+        "translated": ""
     }
 ]
