@@ -6473,5 +6473,40 @@
         "pub_date": "2024-01-25",
         "summary": "We introduce pix2gestalt, a framework for zero-shot amodal segmentation,\nwhich learns to estimate the shape and appearance of whole objects that are\nonly partially visible behind occlusions. By capitalizing on large-scale\ndiffusion models and transferring their representations to this task, we learn\na conditional diffusion model for reconstructing whole objects in challenging\nzero-shot cases, including examples that break natural and physical priors,\nsuch as art. As training data, we use a synthetically curated dataset\ncontaining occluded objects paired with their whole counterparts. Experiments\nshow that our approach outperforms supervised baselines on established\nbenchmarks. Our model can furthermore be used to significantly improve the\nperformance of existing object recognition and 3D reconstruction methods in the\npresence of occlusions.",
         "translated": ""
+    },
+    {
+        "title": "Annotated Hands for Generative Models",
+        "url": "http://arxiv.org/abs/2401.15075v1",
+        "pub_date": "2024-01-26",
+        "summary": "Generative models such as GANs and diffusion models have demonstrated\nimpressive image generation capabilities. Despite these successes, these\nsystems are surprisingly poor at creating images with hands. We propose a novel\ntraining framework for generative models that substantially improves the\nability of such systems to create hand images. Our approach is to augment the\ntraining images with three additional channels that provide annotations to\nhands in the image. These annotations provide additional structure that coax\nthe generative model to produce higher quality hand images. We demonstrate this\napproach on two different generative models: a generative adversarial network\nand a diffusion model. We demonstrate our method both on a new synthetic\ndataset of hand images and also on real photographs that contain hands. We\nmeasure the improved quality of the generated hands through higher confidence\nin finger joint identification using an off-the-shelf hand detector.",
+        "translated": ""
+    },
+    {
+        "title": "From GPT-4 to Gemini and Beyond: Assessing the Landscape of MLLMs on\n  Generalizability, Trustworthiness and Causality through Four Modalities",
+        "url": "http://arxiv.org/abs/2401.15071v1",
+        "pub_date": "2024-01-26",
+        "summary": "Multi-modal Large Language Models (MLLMs) have shown impressive abilities in\ngenerating reasonable responses with respect to multi-modal contents. However,\nthere is still a wide gap between the performance of recent MLLM-based\napplications and the expectation of the broad public, even though the most\npowerful OpenAI's GPT-4 and Google's Gemini have been deployed. This paper\nstrives to enhance understanding of the gap through the lens of a qualitative\nstudy on the generalizability, trustworthiness, and causal reasoning\ncapabilities of recent proprietary and open-source MLLMs across four\nmodalities: ie, text, code, image, and video, ultimately aiming to improve the\ntransparency of MLLMs. We believe these properties are several representative\nfactors that define the reliability of MLLMs, in supporting various downstream\napplications. To be specific, we evaluate the closed-source GPT-4 and Gemini\nand 6 open-source LLMs and MLLMs. Overall we evaluate 230 manually designed\ncases, where the qualitative results are then summarized into 12 scores (ie, 4\nmodalities times 3 properties). In total, we uncover 14 empirical findings that\nare useful to understand the capabilities and limitations of both proprietary\nand open-source MLLMs, towards more reliable downstream multi-modal\napplications.",
+        "translated": ""
+    },
+    {
+        "title": "Deep learning-based approach for tomato classification in complex scenes",
+        "url": "http://arxiv.org/abs/2401.15055v1",
+        "pub_date": "2024-01-26",
+        "summary": "Tracking ripening tomatoes is time consuming and labor intensive. Artificial\nintelligence technologies combined with those of computer vision can help users\noptimize the process of monitoring the ripening status of plants. To this end,\nwe have proposed a tomato ripening monitoring approach based on deep learning\nin complex scenes. The objective is to detect mature tomatoes and harvest them\nin a timely manner. The proposed approach is declined in two parts. Firstly,\nthe images of the scene are transmitted to the pre-processing layer. This\nprocess allows the detection of areas of interest (area of the image containing\ntomatoes). Then, these images are used as input to the maturity detection\nlayer. This layer, based on a deep neural network learning algorithm,\nclassifies the tomato thumbnails provided to it in one of the following five\ncategories: green, brittle, pink, pale red, mature red. The experiments are\nbased on images collected from the internet gathered through searches using\ntomato state across diverse languages including English, German, French, and\nSpanish. The experimental results of the maturity detection layer on a dataset\ncomposed of images of tomatoes taken under the extreme conditions, gave a good\nclassification rate.",
+        "translated": ""
+    },
+    {
+        "title": "Unrecognizable Yet Identifiable: Image Distortion with Preserved\n  Embeddings",
+        "url": "http://arxiv.org/abs/2401.15048v1",
+        "pub_date": "2024-01-26",
+        "summary": "In the realm of security applications, biometric authentication systems play\na crucial role, yet one often encounters challenges concerning privacy and\nsecurity while developing one. One of the most fundamental challenges lies in\navoiding storing biometrics directly in the storage but still achieving\ndecently high accuracy. Addressing this issue, we contribute to both artificial\nintelligence and engineering fields. We introduce an innovative image\ndistortion technique that effectively renders facial images unrecognizable to\nthe eye while maintaining their identifiability by neural network models. From\nthe theoretical perspective, we explore how reliable state-of-the-art\nbiometrics recognition neural networks are by checking the maximal degree of\nimage distortion, which leaves the predicted identity unchanged. On the other\nhand, applying this technique demonstrates a practical solution to the\nengineering challenge of balancing security, precision, and performance in\nbiometric authentication systems. Through experimenting on the widely used\ndatasets, we assess the effectiveness of our method in preserving AI feature\nrepresentation and distorting relative to conventional metrics. We also compare\nour method with previously used approaches.",
+        "translated": ""
+    },
+    {
+        "title": "Learning Neural Radiance Fields of Forest Structure for Scalable and\n  Fine Monitoring",
+        "url": "http://arxiv.org/abs/2401.15029v1",
+        "pub_date": "2024-01-26",
+        "summary": "This work leverages neural radiance fields and remote sensing for forestry\napplications. Here, we show neural radiance fields offer a wide range of\npossibilities to improve upon existing remote sensing methods in forest\nmonitoring. We present experiments that demonstrate their potential to: (1)\nexpress fine features of forest 3D structure, (2) fuse available remote sensing\nmodalities and (3), improve upon 3D structure derived forest metrics.\nAltogether, these properties make neural fields an attractive computational\ntool with great potential to further advance the scalability and accuracy of\nforest monitoring programs.",
+        "translated": ""
     }
 ]
