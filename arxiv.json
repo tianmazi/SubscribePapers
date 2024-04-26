@@ -8608,5 +8608,40 @@
         "pub_date": "2024-04-23",
         "summary": "This paper proposes a new gradient-based XAI method called Guided\nAbsoluteGrad for saliency map explanations. We utilize both positive and\nnegative gradient magnitudes and employ gradient variance to distinguish the\nimportant areas for noise deduction. We also introduce a novel evaluation\nmetric named ReCover And Predict (RCAP), which considers the Localization and\nVisual Noise Level objectives of the explanations. We propose two propositions\nfor these two objectives and prove the necessity of evaluating them. We\nevaluate Guided AbsoluteGrad with seven gradient-based XAI methods using the\nRCAP metric and other SOTA metrics in three case studies: (1) ImageNet dataset\nwith ResNet50 model; (2) International Skin Imaging Collaboration (ISIC)\ndataset with EfficientNet model; (3) the Places365 dataset with DenseNet161\nmodel. Our method surpasses other gradient-based approaches, showcasing the\nquality of enhanced saliency map explanations through gradient magnitude.",
         "translated": ""
+    },
+    {
+        "title": "The Third Monocular Depth Estimation Challenge",
+        "url": "http://arxiv.org/abs/2404.16831v1",
+        "pub_date": "2024-04-25",
+        "summary": "This paper discusses the results of the third edition of the Monocular Depth\nEstimation Challenge (MDEC). The challenge focuses on zero-shot generalization\nto the challenging SYNS-Patches dataset, featuring complex scenes in natural\nand indoor settings. As with the previous edition, methods can use any form of\nsupervision, i.e. supervised or self-supervised. The challenge received a total\nof 19 submissions outperforming the baseline on the test set: 10 among them\nsubmitted a report describing their approach, highlighting a diffused use of\nfoundational models such as Depth Anything at the core of their method. The\nchallenge winners drastically improved 3D F-Score performance, from 17.51% to\n23.72%.",
+        "translated": ""
+    },
+    {
+        "title": "Make-it-Real: Unleashing Large Multimodal Model's Ability for Painting\n  3D Objects with Realistic Materials",
+        "url": "http://arxiv.org/abs/2404.16829v1",
+        "pub_date": "2024-04-25",
+        "summary": "Physically realistic materials are pivotal in augmenting the realism of 3D\nassets across various applications and lighting conditions. However, existing\n3D assets and generative models often lack authentic material properties.\nManual assignment of materials using graphic software is a tedious and\ntime-consuming task. In this paper, we exploit advancements in Multimodal Large\nLanguage Models (MLLMs), particularly GPT-4V, to present a novel approach,\nMake-it-Real: 1) We demonstrate that GPT-4V can effectively recognize and\ndescribe materials, allowing the construction of a detailed material library.\n2) Utilizing a combination of visual cues and hierarchical text prompts, GPT-4V\nprecisely identifies and aligns materials with the corresponding components of\n3D objects. 3) The correctly matched materials are then meticulously applied as\nreference for the new SVBRDF material generation according to the original\ndiffuse map, significantly enhancing their visual authenticity. Make-it-Real\noffers a streamlined integration into the 3D content creation workflow,\nshowcasing its utility as an essential tool for developers of 3D assets.",
+        "translated": ""
+    },
+    {
+        "title": "Made to Order: Discovering monotonic temporal changes via\n  self-supervised video ordering",
+        "url": "http://arxiv.org/abs/2404.16828v1",
+        "pub_date": "2024-04-25",
+        "summary": "Our objective is to discover and localize monotonic temporal changes in a\nsequence of images. To achieve this, we exploit a simple proxy task of ordering\na shuffled image sequence, with `time' serving as a supervisory signal since\nonly changes that are monotonic with time can give rise to the correct\nordering. We also introduce a flexible transformer-based model for\ngeneral-purpose ordering of image sequences of arbitrary length with built-in\nattribution maps. After training, the model successfully discovers and\nlocalizes monotonic changes while ignoring cyclic and stochastic ones. We\ndemonstrate applications of the model in multiple video settings covering\ndifferent scene and object types, discovering both object-level and\nenvironmental changes in unseen sequences. We also demonstrate that the\nattention-based attribution maps function as effective prompts for segmenting\nthe changing regions, and that the learned representations can be used for\ndownstream applications. Finally, we show that the model achieves the state of\nthe art on standard benchmarks for ordering a set of images.",
+        "translated": ""
+    },
+    {
+        "title": "ResVR: Joint Rescaling and Viewport Rendering of Omnidirectional Images",
+        "url": "http://arxiv.org/abs/2404.16825v1",
+        "pub_date": "2024-04-25",
+        "summary": "With the advent of virtual reality technology, omnidirectional image (ODI)\nrescaling techniques are increasingly embraced for reducing transmitted and\nstored file sizes while preserving high image quality. Despite this progress,\ncurrent ODI rescaling methods predominantly focus on enhancing the quality of\nimages in equirectangular projection (ERP) format, which overlooks the fact\nthat the content viewed on head mounted displays (HMDs) is actually a rendered\nviewport instead of an ERP image. In this work, we emphasize that focusing\nsolely on ERP quality results in inferior viewport visual experiences for\nusers. Thus, we propose ResVR, which is the first comprehensive framework for\nthe joint Rescaling and Viewport Rendering of ODIs. ResVR allows obtaining LR\nERP images for transmission while rendering high-quality viewports for users to\nwatch on HMDs. In our ResVR, a novel discrete pixel sampling strategy is\ndeveloped to tackle the complex mapping between the viewport and ERP, enabling\nend-to-end training of ResVR pipeline. Furthermore, a spherical pixel shape\nrepresentation technique is innovatively derived from spherical differentiation\nto significantly improve the visual quality of rendered viewports. Extensive\nexperiments demonstrate that our ResVR outperforms existing methods in viewport\nrendering tasks across different fields of view, resolutions, and view\ndirections while keeping a low transmission overhead.",
+        "translated": ""
+    },
+    {
+        "title": "V2A-Mark: Versatile Deep Visual-Audio Watermarking for Manipulation\n  Localization and Copyright Protection",
+        "url": "http://arxiv.org/abs/2404.16824v1",
+        "pub_date": "2024-04-25",
+        "summary": "AI-generated video has revolutionized short video production, filmmaking, and\npersonalized media, making video local editing an essential tool. However, this\nprogress also blurs the line between reality and fiction, posing challenges in\nmultimedia forensics. To solve this urgent issue, V2A-Mark is proposed to\naddress the limitations of current video tampering forensics, such as poor\ngeneralizability, singular function, and single modality focus. Combining the\nfragility of video-into-video steganography with deep robust watermarking, our\nmethod can embed invisible visual-audio localization watermarks and copyright\nwatermarks into the original video frames and audio, enabling precise\nmanipulation localization and copyright protection. We also design a temporal\nalignment and fusion module and degradation prompt learning to enhance the\nlocalization accuracy and decoding robustness. Meanwhile, we introduce a\nsample-level audio localization method and a cross-modal copyright extraction\nmechanism to couple the information of audio and video frames. The\neffectiveness of V2A-Mark has been verified on a visual-audio tampering\ndataset, emphasizing its superiority in localization precision and copyright\naccuracy, crucial for the sustainable development of video editing in the AIGC\nvideo era.",
+        "translated": ""
     }
 ]
